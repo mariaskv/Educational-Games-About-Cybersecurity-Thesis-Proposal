@@ -11,7 +11,11 @@ public class DialogueUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       textLabel.text = "Hello\n This is my second line"; 
+        textLabel.text = "Καλησπέρα, καλωσήρθατε στο παιχνίδι της κυβερνοασφάλειας, \n το όνομα μου είναι Στέλιος και είμαι εδώ για να σας καθοδηγήσω " ; 
+
+        // sleep(1);
+
+        // textLabel.text = "Καλησπέρα" ; 
     }
 
 }
