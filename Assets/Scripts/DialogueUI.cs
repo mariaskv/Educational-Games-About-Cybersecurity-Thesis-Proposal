@@ -14,6 +14,7 @@ public class DialogueUI : MonoBehaviour
     // Start is called before the first frame update
     private void Start(){
 
+        button1.SetActive(false));
         typewriterEffect = GetComponent<TypewriterEffect>();
         ShowDialogue(testDialogue);
         // CloseDialogueBox();
