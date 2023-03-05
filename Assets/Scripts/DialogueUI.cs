@@ -1,21 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using System.Collections;
 public class DialogueUI : MonoBehaviour
 {
-
+    [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
-    
+    [SerializeField] private DialogueObject testDialogue;
+
+    private TypewriterEffect typewriterEffect;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        textLabel.text = "Καλησπέρα, καλωσήρθατε στο παιχνίδι της κυβερνοασφάλειας, \n το όνομα μου είναι Στέλιος και είμαι εδώ για να σας καθοδηγήσω " ; 
+    private void Start(){
 
-        // sleep(1);
+        typewriterEffect = GetComponent<TypewriterEffect>();
+        ShowDialogue(testDialogue);
+        // CloseDialogueBox();
+    }
 
-        // textLabel.text = "Καλησπέρα" ; 
+    public void ShowDialogue(DialogueObject dialogueObject){
+
+        // dialogueBox.SetActive(true);
+        StartCoroutine(routine:StepThroughDialogue(dialogueObject));
+
+    }
+
+    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject){
+
+        foreach (string dialogue in dialogueObject.Dialogue){
+        
+            yield return typewriterEffect.Run(dialogue, textLabel);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        }
+        CloseDialogueBox();
+    }
+
+    private void CloseDialogueBox(){
+        // dialogueBox.SetActive(false);
+        textLabel.text = string.Empty;
     }
 
 }
