@@ -3,6 +3,8 @@ using TMPro;
 using System.Collections;
 public class DialogueUI : MonoBehaviour
 {
+    public GameObject button1;
+
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TMP_Text textLabel;
     [SerializeField] private DialogueObject testDialogue;
@@ -37,6 +39,7 @@ public class DialogueUI : MonoBehaviour
     private void CloseDialogueBox(){
         // dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
+        button1.SetActive(true);
     }
 
 }
