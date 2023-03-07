@@ -14,7 +14,7 @@ public class DialogueUI : MonoBehaviour
     // Start is called before the first frame update
     private void Start(){
 
-        button1.SetActive(false));
+        button1.SetActive(false);
         typewriterEffect = GetComponent<TypewriterEffect>();
         ShowDialogue(testDialogue);
         // CloseDialogueBox();
@@ -32,7 +32,8 @@ public class DialogueUI : MonoBehaviour
         foreach (string dialogue in dialogueObject.Dialogue){
         
             yield return typewriterEffect.Run(dialogue, textLabel);
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+            yield return new WaitForSeconds((float)0.3);
+            // yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         }
         CloseDialogueBox();
     }
