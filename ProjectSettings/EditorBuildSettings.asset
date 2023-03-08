@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondScene.unity
     guid: 6aa66d2e33cbd474cb082c7fd92d9640
+  - enabled: 1
+    path: Assets/Scenes/Bank.unity
+    guid: be7bf73c0934264489a41636d9bf2217
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: 7bfe878d6ecab484ea04e8852c85e42c
   m_configObjects: {}

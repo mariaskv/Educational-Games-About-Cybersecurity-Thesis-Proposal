@@ -676,7 +676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 452210889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1444357545}
+        m_TargetAssemblyTypeName: EnterHouse, Assembly-CSharp
+        m_MethodName: Enter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &452210889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747677429}
+  - component: {fileID: 747677430}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -1003,6 +1016,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &747677430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747677428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada257988f23f7244947aa4d4fd09d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bank: Bank
 --- !u!1 &763587442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,6 +1393,7 @@ GameObject:
   - component: {fileID: 1444357539}
   - component: {fileID: 1444357543}
   - component: {fileID: 1444357544}
+  - component: {fileID: 1444357545}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1489,6 +1516,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typewriterSpeed: 50
+--- !u!114 &1444357545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444357538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53adcbe9494ab1b4981edf2d13e62eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  house: House
 --- !u!1 &1561550488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1612,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1561550491}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 747677430}
+        m_TargetAssemblyTypeName: EnterBank, Assembly-CSharp
+        m_MethodName: Enter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1561550491
 MonoBehaviour:
   m_ObjectHideFlags: 0
