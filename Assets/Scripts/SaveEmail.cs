@@ -11,16 +11,20 @@ public class SaveEmail : MonoBehaviour
     public InputField Password;
     string TempEmail;
     string TempPassword;
+
+    public InputField EmailSocial;
+    public InputField PasswordSocial;
+    string TempEmailSocial;
+    string TempPasswordSocial;
+
+    public InputField EmailBank;
+    public InputField PasswordBank;
+    string TempEmailBank;
+    string TempPasswordBank;
+
     public GameObject popup;
-    // public GameObject image;
-
-    // Start is called before the first frame update
-    // void Start()
-
-    // {
-    //     TempEmail = PlayerPrefs.GetString("tutorialTextKeyName");
-    //     Email.text = TempEmail;
-    // }
+    public GameObject popup1;
+    public GameObject popup2;
 
     public void SaveThis(){
         TempEmail = Email.text;
@@ -28,16 +32,31 @@ public class SaveEmail : MonoBehaviour
 
         TempPassword = Password.text;
         PlayerPrefs.SetString("tutorialTextKeyName", TempPassword);
-        // image.SetActive(false);
         popup.SetActive(true);
 
     }
 
+    public void SaveSocial(){
+        TempEmailSocial = EmailSocial.text;
+        PlayerPrefs.SetString("tutorialTextKeyName", TempEmailSocial);
 
+        TempPasswordSocial = PasswordSocial.text;
+        PlayerPrefs.SetString("tutorialTextKeyName", TempPasswordSocial);
+        popup1.SetActive(true);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
+
+    public void SaveBank(){
+        TempEmailBank = EmailBank.text;
+        PlayerPrefs.SetString("tutorialTextKeyName", TempEmailBank);
+
+        TempPasswordBank = PasswordBank.text;
+        PlayerPrefs.SetString("tutorialTextKeyName", TempPasswordBank);
+        popup2.SetActive(true);
+
+    }
+
+
+
+
 }
