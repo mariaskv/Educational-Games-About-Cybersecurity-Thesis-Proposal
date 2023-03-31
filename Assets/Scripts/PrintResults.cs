@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
-public class CoinsManager : MonoBehaviour
+public class PrintResults : MonoBehaviour
 {
-
-    public TMP_Text scoreText;
-
-    public int score = 100;
+    
+    public TMP_Text Social;
+    public SaveEmail a;
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreText.text = score.ToString() + " Νομίσματα";
+        // Social.text = a.CheckPasswordSocial();   
     }
 
     // Update is called once per frame
