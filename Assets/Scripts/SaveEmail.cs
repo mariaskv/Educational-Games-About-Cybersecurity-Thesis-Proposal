@@ -86,24 +86,22 @@ public class SaveEmail : MonoBehaviour
     public void CheckPasswordSocial(){
         string pass = PlayerPrefs.GetString("socialpass");
         print("Change Pass:" + pass);
-        // PlayerPrefs.Save();
-        // return pass;
         bool result = Regex.IsMatch(pass, "^[a-zA-Z0-9]+$" );
         bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
         bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
         if(result1 && !result2){
-            ResSocial = "Simple";
+            ResSocial = "Your password is simple";
         }
         else if(result2 && !result1){
-            ResSocial = "Simple";
+            ResSocial = "Your password is simple";
         }
         else if(result){
-            ResSocial = "Average";
+            ResSocial = "Your password is average";
         }
         else {
-            ResSocial = "Strong";
+            ResSocial = "Your password is strong";
         }
-        Social.text = (ResSocial + result1 + result2 + pass);
+        Social.text = ResSocial;
     }
 
 }

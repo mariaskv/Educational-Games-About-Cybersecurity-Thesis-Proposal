@@ -7838,7 +7838,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1249857479}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2092005473}
+        m_TargetAssemblyTypeName: GoToSocialNetwork, Assembly-CSharp
+        m_MethodName: SocialNetwork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1249857479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8926,6 +8938,7 @@ GameObject:
   - component: {fileID: 1436429178}
   - component: {fileID: 1436429180}
   - component: {fileID: 1436429181}
+  - component: {fileID: 1436429182}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -9050,6 +9063,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Social: {fileID: 113318179}
   a: {fileID: 1436429177}
+--- !u!114 &1436429182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436429173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 748809c6c7cdede42baedb3140a059d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HelpResult: {fileID: 113318179}
 --- !u!1 &1478038275
 GameObject:
   m_ObjectHideFlags: 0
@@ -13228,7 +13254,7 @@ GameObject:
   - component: {fileID: 2098664842}
   - component: {fileID: 2098664841}
   m_Layer: 5
-  m_Name: option3 (1)
+  m_Name: option4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13298,7 +13324,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2098664842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2092005473}
+        m_TargetAssemblyTypeName: GoToSocialNetwork, Assembly-CSharp
+        m_MethodName: SocialNetwork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1436429182}
+        m_TargetAssemblyTypeName: UseHelp, Assembly-CSharp
+        m_MethodName: Help
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2098664842
 MonoBehaviour:
   m_ObjectHideFlags: 0
