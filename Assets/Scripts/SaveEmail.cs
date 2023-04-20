@@ -25,6 +25,7 @@ public class SaveEmail : MonoBehaviour
     string TempPasswordBank;
 
     public InputField NewPasswordSocial;
+    public InputField NewPasswordEmail;
 
     public GameObject popup;
     public GameObject popup1;
@@ -44,7 +45,7 @@ public class SaveEmail : MonoBehaviour
         PlayerPrefs.SetString("tutorialTextKeyName", TempEmail);
 
         TempPassword = Password.text;
-        PlayerPrefs.SetString("tutorialTextKeyName", TempPassword);
+        PlayerPrefs.SetString("emailpass", TempPassword);
         popup.SetActive(true);
 
     }
@@ -74,6 +75,18 @@ public class SaveEmail : MonoBehaviour
 
         TempPasswordSocial = NewPasswordSocial.text;
         PlayerPrefs.SetString("socialpass", TempPasswordSocial);
+        PlayerPrefs.Save();
+
+        // a.Start()
+        print(TempPasswordSocial);
+        // print(CheckPasswordSocial());
+
+    }
+
+    public void ChangePasswordEmail(){
+
+        TempPassword = NewPasswordEmail.text;
+        PlayerPrefs.SetString("emailpass", TempPassword);
         PlayerPrefs.Save();
 
         // a.Start()
