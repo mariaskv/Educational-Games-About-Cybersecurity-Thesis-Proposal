@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class SaveEmail : MonoBehaviour
 {
 
+    CoinsManager c;
+
     public InputField Email;
     public InputField Password;
     string TempEmail;
@@ -26,6 +28,7 @@ public class SaveEmail : MonoBehaviour
 
     public InputField NewPasswordSocial;
     public InputField NewPasswordEmail;
+    public InputField NewPasswordBank;
 
     public GameObject popup;
     public GameObject popup1;
@@ -37,8 +40,14 @@ public class SaveEmail : MonoBehaviour
     public string ResBank;
 
     public TMP_Text Social;
+    public TMP_Text EmailRes;
+    public TMP_Text BankRes;
 
     // public PrintResults a;
+
+    void Start(){
+        c = GameObject.FindGameObjectWithTag("Coins").GetComponent<CoinsManager>();
+    }
 
     public void SaveThis(){
         TempEmail = Email.text;
@@ -66,7 +75,7 @@ public class SaveEmail : MonoBehaviour
         PlayerPrefs.SetString("tutorialTextKeyName", TempEmailBank);
 
         TempPasswordBank = PasswordBank.text;
-        PlayerPrefs.SetString("tutorialTextKeyName", TempPasswordBank);
+        PlayerPrefs.SetString("bankpass", TempPasswordBank);
         popup2.SetActive(true);
 
     }
@@ -78,7 +87,7 @@ public class SaveEmail : MonoBehaviour
         PlayerPrefs.Save();
 
         // a.Start()
-        print(TempPasswordSocial);
+        // print(TempPasswordSocial);
         // print(CheckPasswordSocial());
 
     }
@@ -90,15 +99,29 @@ public class SaveEmail : MonoBehaviour
         PlayerPrefs.Save();
 
         // a.Start()
-        print(TempPasswordSocial);
+        // print(TempPasswordSocial);
+        // print(CheckPasswordSocial());
+
+    }
+
+    public void ChangePasswordBank(){
+
+        TempPasswordBank = NewPasswordBank .text;
+        PlayerPrefs.SetString("bankpass", TempPasswordBank);
+        PlayerPrefs.Save();
+
+        // a.Start()
+        // print(TempPasswordBank);
         // print(CheckPasswordSocial());
 
     }
 
 
     public void CheckPasswordSocial(){
+
+
         string pass = PlayerPrefs.GetString("socialpass");
-        print("Change Pass:" + pass);
+        // print("Change Pass:" + pass);
         bool result = Regex.IsMatch(pass, "^[a-zA-Z0-9]+$" );
         bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
         bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
@@ -115,6 +138,89 @@ public class SaveEmail : MonoBehaviour
             ResSocial = "Your password is strong";
         }
         Social.text = ResSocial;
+    }
+
+    public static bool hasSpecialChar(string input){
+        string specialChar = @"\|!#$%&/()=?»«@£§€{}.-;'<>_,";
+        foreach (var item in specialChar)
+        {
+            if (input.Contains(item)) return true;
+        }
+
+        return false;
+    }
+
+
+    public void CheckPasswordEmail(){
+        string pass = PlayerPrefs.GetString("emailpass");
+        string pass_social = PlayerPrefs.GetString("socialpass");
+        // print("Change Pass:" + pass);
+        int pass_length = pass.Length;
+        bool same = (pass == pass_social);
+        bool result = Regex.IsMatch(pass, "^[a-zA-Z0-9]+$" );
+        bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
+        bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
+        bool result3 = Regex.IsMatch(pass, "^[a-zA-Z0-9!@#$&()\\-`.+,/\"]*$");
+
+
+        if (same || pass_length < 8){
+            ResSocial = "Bad";
+        }
+        else if((result1 && !result2 && pass_length >= 8) || (!result1 && result2 && pass_length >= 8)){
+            ResSocial = "Simple 2 questions at most";
+        }
+        else if(result && pass_length >= 8){
+            ResSocial = "Average you have to answer 3 questions at most";
+        }
+        else if(result3 && pass_length >= 8 && !same){
+            ResSocial = "Best, you win 20 coins";
+        }
+        else{
+            ResSocial = "Other unexpected thingy, 1 question at most";
+        }
+
+        EmailRes.text = ResSocial;
+    }
+
+    public void CheckPasswordBank(){
+        string pass = PlayerPrefs.GetString("bankpass");
+        string pass_email = PlayerPrefs.GetString("emailpass");
+        string pass_social = PlayerPrefs.GetString("socialpass");
+        // print("Change Pass:" + pass);
+        int pass_length = pass.Length;
+        bool same = (pass == pass_social);
+        bool same1 = (pass == pass_email);
+        bool result = Regex.IsMatch(pass, "^[a-zA-Z0-9]+$" );
+        bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
+        bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
+        bool result3 = Regex.IsMatch(pass, "^[a-zA-Z0-9!@#$&()\\-`.+,/\"]*$");
+
+        string last_char = pass.Substring(pass_length - 1);
+
+        string rest = pass.Substring(0, (pass_length - 1));
+
+        bool result4 = hasSpecialChar(last_char);
+        bool result5 = Regex.IsMatch(rest, "^[a-zA-Z0-9]+$" );
+
+        bool result6 = Regex.IsMatch(rest, "^[a-zA-Z0-9!@#$&()\\-`.+,/\"]*$");
+
+        if (same || same1 || result || result1 || result2 || pass_length < 8){
+            ResBank = "Bad";
+        }
+        else if(result4 && result5 && pass_length >= 8){
+            ResBank = "Simple 2 questions at most";
+        }
+        else if(result6 && pass_length >= 8){
+            ResBank = "Average you have to answer 3 questions at most";
+        }
+        // else if(result3 && pass_length >= 8 && !same){
+        //     ResBank = "Best, you win 20 coins";
+        // }
+        else{
+            ResBank = "Other unexpected thingy, 1 question at most";
+        }
+
+        BankRes.text = ResBank;
     }
 
 }

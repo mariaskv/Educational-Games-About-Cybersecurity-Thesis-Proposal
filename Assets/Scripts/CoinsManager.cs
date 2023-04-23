@@ -22,4 +22,39 @@ public class CoinsManager : MonoBehaviour
     {
         
     }
+
+    public void show(){
+        print(score.ToString() + " Νομίσματα");
+    }
+
+    public void lose20(){
+        score = score - 20;
+    }
+
+    public void lose15(){
+        score = score - 15;
+    }
+
+    public void lose5(){
+        score = score - 5;
+    }
+
+    public void win5(){
+        score = score + 5;
+    }
+
+    public void wind10(){
+        score = score + 10;
+    }
+
+    public void win15(){
+        score = score + 15;
+    }
+
+    public void win20(){
+        score = score + 20;
+    }
+
 }
+
+
