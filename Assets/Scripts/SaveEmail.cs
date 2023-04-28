@@ -45,6 +45,8 @@ public class SaveEmail : MonoBehaviour
 
     // public PrintResults a;
 
+    public int Max;
+
     void Start(){
         c = GameObject.FindGameObjectWithTag("Coins").GetComponent<CoinsManager>();
     }
@@ -127,15 +129,19 @@ public class SaveEmail : MonoBehaviour
         bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
         if(result1 && !result2){
             ResSocial = "Your password is simple";
+            Max = 2;
         }
         else if(result2 && !result1){
             ResSocial = "Your password is simple";
+            Max = 2;
         }
         else if(result){
             ResSocial = "Your password is average";
+            Max = 3;
         }
         else {
             ResSocial = "Your password is strong";
+            Max = -1;
         }
         Social.text = ResSocial;
     }
@@ -165,18 +171,23 @@ public class SaveEmail : MonoBehaviour
 
         if (same || pass_length < 8){
             ResSocial = "Bad";
+            Max = -10;
         }
         else if((result1 && !result2 && pass_length >= 8) || (!result1 && result2 && pass_length >= 8)){
             ResSocial = "Simple 2 questions at most";
+            Max = 2;
         }
         else if(result && pass_length >= 8){
             ResSocial = "Average you have to answer 3 questions at most";
+            Max = 3;
         }
         else if(result3 && pass_length >= 8 && !same){
             ResSocial = "Best, you win 20 coins";
+            Max = -2;
         }
         else{
             ResSocial = "Other unexpected thingy, 1 question at most";
+            Max = 1;
         }
 
         EmailRes.text = ResSocial;
@@ -206,18 +217,22 @@ public class SaveEmail : MonoBehaviour
 
         if (same || same1 || result || result1 || result2 || pass_length < 8){
             ResBank = "Bad";
+            Max = -10;
         }
         else if(result4 && result5 && pass_length >= 8){
             ResBank = "Simple 2 questions at most";
+            Max = 2;
         }
         else if(result6 && pass_length >= 8){
             ResBank = "Average you have to answer 3 questions at most";
+            Max = 3;
         }
         // else if(result3 && pass_length >= 8 && !same){
         //     ResBank = "Best, you win 20 coins";
         // }
         else{
             ResBank = "Other unexpected thingy, 1 question at most";
+            Max = 1;
         }
 
         BankRes.text = ResBank;

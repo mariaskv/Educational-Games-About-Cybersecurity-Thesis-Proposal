@@ -17,7 +17,7 @@ public class AnswerScript : MonoBehaviour
         }
         else{
             print("False");
-            quizManager.correct();
+            quizManager.wrong();
         }
     }
 
