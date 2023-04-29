@@ -127,20 +127,24 @@ public class SaveEmail : MonoBehaviour
         bool result = Regex.IsMatch(pass, "^[a-zA-Z0-9]+$" );
         bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
         bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
-        if(result1 && !result2){
-            ResSocial = "Your password is simple";
+        if(pass.Length == 0){
+            ResSocial = "Ο κωδικός σας είναι πολύ αδυναμος, δεν μπορείτε να λύσετε το κουιζ";
+            Max = -10;
+        }
+        else if(result1 && !result2){
+            ResSocial = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
             Max = 2;
         }
         else if(result2 && !result1){
-            ResSocial = "Your password is simple";
+            ResSocial = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
             Max = 2;
         }
         else if(result){
-            ResSocial = "Your password is average";
+            ResSocial = "Ο κωδικός σας είναι μέτριος. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις";
             Max = 3;
         }
         else {
-            ResSocial = "Your password is strong";
+            ResSocial = "Ο κωδικός σας είναι ισχυρός. Δεν χρειάζετα να λύσετε το κουιζ";
             Max = -1;
         }
         Social.text = ResSocial;
@@ -170,23 +174,23 @@ public class SaveEmail : MonoBehaviour
 
 
         if (same || pass_length < 8){
-            ResSocial = "Bad";
+            ResSocial = "Ο κωδικός σας είναι πολύ αδυναμος, δεν μπορείτε να λύσετε το κουιζ";
             Max = -10;
         }
         else if((result1 && !result2 && pass_length >= 8) || (!result1 && result2 && pass_length >= 8)){
-            ResSocial = "Simple 2 questions at most";
+            ResSocial = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
             Max = 2;
         }
         else if(result && pass_length >= 8){
-            ResSocial = "Average you have to answer 3 questions at most";
+            ResSocial = "Ο κωδικός σας είναι μέτριος. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις";
             Max = 3;
         }
         else if(result3 && pass_length >= 8 && !same){
-            ResSocial = "Best, you win 20 coins";
+            ResSocial = "Ο κωδικός σας είναι ισχυρός. Δεν χρειάζετα να λύσετε το κουιζ";
             Max = -2;
         }
         else{
-            ResSocial = "Other unexpected thingy, 1 question at most";
+            ResSocial = "Συνέβη κάτι μη αναμενόμενο. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τη 1 σωστή απάντηση";
             Max = 1;
         }
 
@@ -216,22 +220,22 @@ public class SaveEmail : MonoBehaviour
         bool result6 = Regex.IsMatch(rest, "^[a-zA-Z0-9!@#$&()\\-`.+,/\"]*$");
 
         if (same || same1 || result || result1 || result2 || pass_length < 8){
-            ResBank = "Bad";
+            ResBank = "Ο κωδικός σας είναι πολύ αδυναμος, δεν μπορείτε να λύσετε το κουιζ";
             Max = -10;
         }
         else if(result4 && result5 && pass_length >= 8){
-            ResBank = "Simple 2 questions at most";
+            ResBank = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
             Max = 2;
         }
         else if(result6 && pass_length >= 8){
-            ResBank = "Average you have to answer 3 questions at most";
+            ResBank = "Ο κωδικός σας είναι μέτριος. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις";
             Max = 3;
         }
         // else if(result3 && pass_length >= 8 && !same){
-        //     ResBank = "Best, you win 20 coins";
+        //     ResBank = "Ο κωδικός σας είναι ισχυρός. Δεν χρειάζετα να λύσετε το κουιζ";
         // }
         else{
-            ResBank = "Other unexpected thingy, 1 question at most";
+            ResBank = "Συνέβη κάτι μη αναμενόμενο. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τη 1 σωστή απάντηση";
             Max = 1;
         }
 

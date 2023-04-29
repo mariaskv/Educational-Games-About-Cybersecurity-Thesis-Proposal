@@ -98,7 +98,7 @@ public class QuizManager : MonoBehaviour
 
     public void wrong(){
         Feedback.SetActive(true);
-        Feedbacktxt.text = "Η απάντηση σας ήταν λάθος. Η σωστή απάντηση στην ερώτηση: " + QnA[currentQuestion].Question + " είναι: " + QnA[currentQuestion].Answers[QnA[currentQuestion].CorrectAnswer];
+        Feedbacktxt.text = "Η απάντηση σας ήταν λάθος. Η σωστή απάντηση στην ερώτηση: " + QnA[currentQuestion].Question + " είναι: " + QnA[currentQuestion].Answers[QnA[currentQuestion].CorrectAnswer - 1];
         QnA.RemoveAt(currentQuestion);
         // generateQuestion();
     }
