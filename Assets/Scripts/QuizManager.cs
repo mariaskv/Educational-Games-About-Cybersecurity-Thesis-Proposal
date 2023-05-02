@@ -78,7 +78,7 @@ public class QuizManager : MonoBehaviour
         }
         else if(score == 0){
             coinsManager.lose15(); //0 correct answers
-            ScoreTxt.text += "/\n Χάνεις 15 νομίσματα";
+            ScoreTxt.text += "\n Χάνεις 15 νομίσματα";
         }
         // print(coinsManager.score);
     }

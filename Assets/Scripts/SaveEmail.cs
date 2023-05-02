@@ -43,12 +43,36 @@ public class SaveEmail : MonoBehaviour
     public TMP_Text EmailRes;
     public TMP_Text BankRes;
 
+    public GameObject button1;
+    public GameObject button2;
+    public GameObject button3;
+
+    public GameObject continueButton;
+
     // public PrintResults a;
 
     public int Max;
 
     void Start(){
         c = GameObject.FindGameObjectWithTag("Coins").GetComponent<CoinsManager>();
+    }
+
+    public void UnderstandMistake(){
+        button1.SetActive(false);
+        button2.SetActive(false);
+        button3.SetActive(false);
+
+        if(Max > 0)
+            Social.text = "Τέλεια. Χαίρομαι που κατάλαβες το λάθος σου ευτυχώς υπάρχει χρόνος να λύσεις ακόμα το κουιζ όμως η μέγιστη ανταμοιβή που μπορείς να πάρεις είναι στις 2 σωστές απαντήσεις.\nΤρέχα να προλάβεις.\n\n\n Και να θυμάσαι καλό είναι οι κωδικοί μας να έχουν τουλάχιστον 8-10 χαρακτήρες μέγεθος.";
+        else
+            Social.text = "Τέλεια. Χαίρομαι που κατάλαβες το λάθος σου\nΔυστυχώς όμως δεν προλαβαίνεις να λύσεις το κουιζ, ο χάκερ έχει ήδη εισβάλει στον λογαριασμό σου. Τρέχα να τον προλάβεις πρωτού παραβιάσει το ηλεκτρονικό σου ταχυδρομείο.\n\n\n Και να θυμάσαι καλό είναι οι κωδικοί μας να έχουν τουλάχιστον 8-10 χαρακτήρες μέγεθος.";
+
+        continueButton.SetActive(true);
+
+    }
+
+    public void DoesNotUnderstandMistake(){
+        Social.text = "Έλα όυτε τώρα; Προσπάθησε ξανά! Θυμήσου τι περιείχε ο κωδικός σου!";
     }
 
     public void SaveThis(){
@@ -128,15 +152,26 @@ public class SaveEmail : MonoBehaviour
         bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
         bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
         if(pass.Length == 0){
-            ResSocial = "Ο κωδικός σας είναι πολύ αδυναμος, δεν μπορείτε να λύσετε το κουιζ";
             Max = -10;
+            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ απλός. \n Μπορείς μήπως να σκεφτείς γιατί;";
+            button1.SetActive(true);
+            button2.SetActive(true);
+            button3.SetActive(true);
+
         }
         else if(result1 && !result2){
-            ResSocial = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
+            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ απλός. \n Μπορείς μήπως να σκεφτείς γιατί;";
             Max = 2;
+            button1.SetActive(true);
+            button2.SetActive(true);
+            button3.SetActive(true);
+
         }
         else if(result2 && !result1){
-            ResSocial = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
+            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ απλός. \n Μπορείς μήπως να σκεφτείς γιατί;";
+            button1.SetActive(true);
+            button2.SetActive(true);
+            button3.SetActive(true);
             Max = 2;
         }
         else if(result){
