@@ -7,6 +7,7 @@ public class PopUp : MonoBehaviour
 {
     
     public GameObject popup;
+    public GameObject toHide;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,10 @@ public class PopUp : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Hide(){
+        toHide.SetActive(false);
     }
 
     public void Show(){
