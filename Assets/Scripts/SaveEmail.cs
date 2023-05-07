@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class SaveEmail : MonoBehaviour
 {
@@ -33,7 +34,9 @@ public class SaveEmail : MonoBehaviour
     public GameObject popup;
     public GameObject popup1;
     public GameObject popup2;
-
+    public GameObject popupWrongEmail;
+    public GameObject popupWrongSocial;
+    public GameObject popupWrongBank;
 
     public string ResSocial;
     public string ResEmail;
@@ -76,34 +79,56 @@ public class SaveEmail : MonoBehaviour
     }
 
     public void SaveThis(){
-        TempEmail = Email.text;
-        PlayerPrefs.SetString("tutorialTextKeyName", TempEmail);
+        if(String.IsNullOrEmpty(Email.text) == true){
+            popupWrongEmail.SetActive(true);
+        }
+        else if(String.IsNullOrEmpty(Password.text) == true){
+            popupWrongEmail.SetActive(true);
+        }
+        else{
+            TempEmail = Email.text;
+            PlayerPrefs.SetString("tutorialTextKeyName", TempEmail);
 
-        TempPassword = Password.text;
-        PlayerPrefs.SetString("emailpass", TempPassword);
-        popup.SetActive(true);
-
+            TempPassword = Password.text;
+            PlayerPrefs.SetString("emailpass", TempPassword);
+            popup.SetActive(true);
+        }
     }
 
     public void SaveSocial(){
-        TempEmailSocial = EmailSocial.text;
-        PlayerPrefs.SetString("socialemail", TempEmailSocial);
+        if(String.IsNullOrEmpty(EmailSocial.text) == true){
+            popupWrongSocial.SetActive(true);
+        }
+        else if(String.IsNullOrEmpty(PasswordSocial.text) == true){
+            popupWrongSocial.SetActive(true);
+        }
+        else{
+            TempEmailSocial = EmailSocial.text;
+            PlayerPrefs.SetString("socialemail", TempEmailSocial);
 
-        TempPasswordSocial = PasswordSocial.text;
-        PlayerPrefs.SetString("socialpass", TempPasswordSocial);
-        PlayerPrefs.Save();
-        popup1.SetActive(true);
+            TempPasswordSocial = PasswordSocial.text;
+            PlayerPrefs.SetString("socialpass", TempPasswordSocial);
+            PlayerPrefs.Save();
+            popup1.SetActive(true);
+        }
 
     }
 
     public void SaveBank(){
-        TempEmailBank = EmailBank.text;
-        PlayerPrefs.SetString("tutorialTextKeyName", TempEmailBank);
+        if(String.IsNullOrEmpty(EmailBank.text) == true){
+            popupWrongBank.SetActive(true);
+        }
+        else if(String.IsNullOrEmpty(PasswordBank.text) == true){
+            popupWrongBank.SetActive(true);
+        }
+        else{
+            TempEmailBank = EmailBank.text;
+            PlayerPrefs.SetString("tutorialTextKeyName", TempEmailBank);
 
-        TempPasswordBank = PasswordBank.text;
-        PlayerPrefs.SetString("bankpass", TempPasswordBank);
-        popup2.SetActive(true);
-
+            TempPasswordBank = PasswordBank.text;
+            PlayerPrefs.SetString("bankpass", TempPasswordBank);
+            popup2.SetActive(true);
+        }
     }
 
     public void ChangePasswordSocial(){
@@ -175,12 +200,12 @@ public class SaveEmail : MonoBehaviour
             Max = 2;
         }
         else if(result){
-            ResSocial = "Ο κωδικός σας είναι μέτριος. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις";
+            ResSocial = "Ο κωδικός σας είναι μέτριος. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις. Μπορείς να σκεφτείς τι θα έπρεπε ακόμα να βελτιωθεί προκειμένου να γίνει πλήρως ισχυρός;";
             Max = 3;
         }
         else {
-            ResSocial = "Ο κωδικός σας είναι ισχυρός. Δεν χρειάζετα να λύσετε το κουιζ";
-            Max = -1;
+            ResSocial = "Ο κωδικός σου είναι ισχυρός. Δεν χρειάζεται να λύσεις το κουιζ";
+            Max = -10;
         }
         Social.text = ResSocial;
     }
@@ -209,23 +234,23 @@ public class SaveEmail : MonoBehaviour
 
 
         if (same || pass_length < 8){
-            ResSocial = "Ο κωδικός σας είναι πολύ αδυναμος, δεν μπορείτε να λύσετε το κουιζ";
+            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ αδύναμος. \n Μπορείς μήπως να σκεφτείς γιατί;";
             Max = -10;
         }
         else if((result1 && !result2 && pass_length >= 8) || (!result1 && result2 && pass_length >= 8)){
-            ResSocial = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
+            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ απλός. \n Μπορείς μήπως να σκεφτείς γιατί;";
             Max = 2;
         }
         else if(result && pass_length >= 8){
-            ResSocial = "Ο κωδικός σας είναι μέτριος. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις";
+            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ απλός. \n Μπορείς μήπως να σκεφτείς γιατί;";
             Max = 3;
         }
         else if(result3 && pass_length >= 8 && !same){
-            ResSocial = "Ο κωδικός σας είναι ισχυρός. Δεν χρειάζετα να λύσετε το κουιζ";
+            ResSocial = "Ο κωδικός σου είναι ισχυρός. Δεν χρειάζεται να λύσεις το κουιζ";
             Max = -2;
         }
         else{
-            ResSocial = "Συνέβη κάτι μη αναμενόμενο. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τη 1 σωστή απάντηση";
+            ResSocial = "Συνέβη κάτι μη αναμενόμενο. Μπορείς να λύσεις το κουιζ με μέγιστη ανταμοιβή τη 1 σωστή απάντηση";
             Max = 1;
         }
 

@@ -52,19 +52,23 @@ public class QuizManager : MonoBehaviour
             ScoreTxt.text = "Το σκορ σας είναι: " + score + "/" + TotalQuestions;
         }
 
+        //win -> score * 5
+
+        // 0/0 -> lose 15
+
+        //extra week psw -> lose 20
+
+        //very strong psw -> win 20
+
         if(score == 1 && Max >= 1){
-            coinsManager.lose5(); 
-            ScoreTxt.text += "\n Χάνεις 5 νομίσματα";
-        }
-        else if(score == 2 && Max >= 2){
-            coinsManager.win5();
+            coinsManager.win5(); 
             ScoreTxt.text += "\n Κέρδισες 5 νομίσματα";
         }
-        else if(score == 3 && Max >= 3){
+        else if(score == 2 && Max >= 2){
             coinsManager.win10();
             ScoreTxt.text += "\n Κέρδισες 10 νομίσματα";
         }
-        else if(Max == -1){
+        else if(score == 3 && Max >= 3){
             coinsManager.win15();
             ScoreTxt.text += "\n Κέρδισες 15 νομίσματα";
         }
