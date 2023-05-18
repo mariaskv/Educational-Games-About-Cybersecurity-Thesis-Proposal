@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07dea08b2224c164eac53a36334b1269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: SecondScene
+  nextLevel: ThirdScene
 --- !u!4 &15526327
 Transform:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0387f8daf00b2364ba32a2f286cb2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 10
+  typewriterSpeed: 20
 --- !u!1 &1002207637
 GameObject:
   m_ObjectHideFlags: 0

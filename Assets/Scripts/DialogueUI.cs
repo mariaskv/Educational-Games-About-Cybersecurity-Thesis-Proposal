@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using System.Threading;
 public class DialogueUI : MonoBehaviour
 {
     public GameObject button1;
@@ -34,6 +35,7 @@ public class DialogueUI : MonoBehaviour
         
             yield return typewriterEffect.Run(dialogue, textLabel);
             yield return new WaitForSeconds((float)0.3);
+            Thread.Sleep(1000);
             // yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         }
         CloseDialogueBox();

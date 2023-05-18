@@ -1564,7 +1564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &81495087
 Transform:
   m_ObjectHideFlags: 0
@@ -3903,7 +3903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u03A0\u03C1\u03BF\u03C7\u03C9\u03C1\u03AC\u03BC\u03B5"
+  m_text: "\u03A3\u03C5\u03BD\u03AD\u03C7\u03B5\u03B9\u03B1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6157,7 +6157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0387f8daf00b2364ba32a2f286cb2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 10
+  typewriterSpeed: 20
 --- !u!114 &241193861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7434,7 +7434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oldbg: {fileID: 73675179}
-  newbg: {fileID: 681238643}
+  newbg: {fileID: 850562611}
 --- !u!114 &296592330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7447,7 +7447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0387f8daf00b2364ba32a2f286cb2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 10
+  typewriterSpeed: 20
 --- !u!114 &296592331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9759,7 +9759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0387f8daf00b2364ba32a2f286cb2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 10
+  typewriterSpeed: 20
 --- !u!114 &410825286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11664,7 +11664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &478143706
 Transform:
   m_ObjectHideFlags: 0
@@ -17191,7 +17191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0387f8daf00b2364ba32a2f286cb2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 10
+  typewriterSpeed: 20
 --- !u!114 &749654659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24890,7 +24890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0387f8daf00b2364ba32a2f286cb2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 10
+  typewriterSpeed: 20
 --- !u!114 &1156416487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25441,7 +25441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1198596407
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25451,7 +25451,7 @@ RectTransform:
   m_GameObject: {fileID: 1198596406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5568, y: 1.82924, z: 1.5568}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1718148227}
@@ -25575,7 +25575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1202254754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25585,7 +25585,7 @@ RectTransform:
   m_GameObject: {fileID: 1202254753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3535, y: 1.8609271, z: 1.3535}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1783251808}
@@ -25594,7 +25594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: -260}
+  m_AnchoredPosition: {x: 13, y: -274}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1202254755
@@ -30443,7 +30443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0387f8daf00b2364ba32a2f286cb2ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 10
+  typewriterSpeed: 20
 --- !u!114 &1438453542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38212,7 +38212,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u03A0\u03C1\u03BF\u03C7\u03C9\u03C1\u03AC\u03BC\u03B5"
+  m_text: "\u03A3\u03C5\u03BD\u03AD\u03C7\u03B5\u03B9\u03B1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39708,7 +39708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oldbg: {fileID: 2110504876}
-  newbg: {fileID: 843567907}
+  newbg: {fileID: 73675179}
 --- !u!114 &1920508279
 MonoBehaviour:
   m_ObjectHideFlags: 0
