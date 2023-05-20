@@ -10,25 +10,25 @@ public class BackgroundMusic : MonoBehaviour
     public GameObject on;
     public GameObject off;
 
-    void Awake(){
-        if(backgroundMusic == null){
+    void Start(){
+        // if(backgroundMusic == null){
             backgroundMusic = this;
-            // DontDestroyOnLoad(backgroundMusic);
-        }
-        else{
-             Destroy(gameObject);
-        }
+            DontDestroyOnLoad(backgroundMusic);
+        // }
+        // else{
+        //      Destroy(gameObject);
+        // }
     }
 
     public void On(){
-        AudioListener.pause = true;
+        AudioListener.volume = 0;
         on.SetActive(false);
         off.SetActive(true);
         
     }
 
     public void Off(){
-        AudioListener.pause = false;
+        AudioListener.volume = 0.8f;
         off.SetActive(false);
         on.SetActive(true);
         
