@@ -60,17 +60,29 @@ public class QuizManager : MonoBehaviour
 
         //very strong psw -> win 20
 
-        if(score == 1 && Max >= 1){
+        if(score >= 1 && Max == 1){
             coinsManager.win5(); 
             ScoreTxt.text += "\n Κέρδισες 5 νομίσματα";
         }
-        else if(score == 2 && Max >= 2){
+        else if(score == 1 && Max == 2){
+            coinsManager.win5(); 
+            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα";     
+        }
+        else if(score >= 2 && Max == 2){
             coinsManager.win10();
             ScoreTxt.text += "\n Κέρδισες 10 νομίσματα";
         }
         else if(score == 3 && Max >= 3){
             coinsManager.win15();
             ScoreTxt.text += "\n Κέρδισες 15 νομίσματα";
+        }
+        else if(score == 2 && Max >= 3){
+            coinsManager.win10();
+            ScoreTxt.text += "\n Κέρδισες 10 νομίσματα";
+        }
+        else if(score == 1 && Max >= 3){
+            coinsManager.win5();
+            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα";
         }
         else if(Max == -10){
             coinsManager.lose20();
