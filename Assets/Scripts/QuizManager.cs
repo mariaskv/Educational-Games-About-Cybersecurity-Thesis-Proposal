@@ -46,10 +46,10 @@ public class QuizManager : MonoBehaviour
         QuizPanel.SetActive(false);
         QuizEnd.SetActive(true);
         if(Max < 0){
-            ScoreTxt.text = "Δεν χρειάζεται να λύσεις το κουιζ συνέχισε παρακάτω";
+            ScoreTxt.text = "Δεν χρειάζεται να λύσεις το κουιζ συνέχισε παρακάτω.";
         }
         else{
-            ScoreTxt.text = "Το σκορ σας είναι: " + score + "/" + TotalQuestions;
+            ScoreTxt.text = "Το σκορ σου είναι: " + score + "/" + TotalQuestions;
         }
 
         //win -> score * 5
@@ -62,39 +62,39 @@ public class QuizManager : MonoBehaviour
 
         if(score >= 1 && Max == 1){
             coinsManager.win5(); 
-            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα";
+            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα.";
         }
         else if(score == 1 && Max == 2){
             coinsManager.win5(); 
-            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα";     
+            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα.";     
         }
         else if(score >= 2 && Max == 2){
             coinsManager.win10();
-            ScoreTxt.text += "\n Κέρδισες 10 νομίσματα";
+            ScoreTxt.text += "\n Κέρδισες 10 νομίσματα.";
         }
         else if(score == 3 && Max >= 3){
             coinsManager.win15();
-            ScoreTxt.text += "\n Κέρδισες 15 νομίσματα";
+            ScoreTxt.text += "\n Κέρδισες 15 νομίσματα.";
         }
         else if(score == 2 && Max >= 3){
             coinsManager.win10();
-            ScoreTxt.text += "\n Κέρδισες 10 νομίσματα";
+            ScoreTxt.text += "\n Κέρδισες 10 νομίσματα.";
         }
         else if(score == 1 && Max >= 3){
             coinsManager.win5();
-            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα";
+            ScoreTxt.text += "\n Κέρδισες 5 νομίσματα.";
         }
         else if(Max == -10){
             coinsManager.lose20();
-            ScoreTxt.text += "\n Χάνεις 20 νομίσματα";
+            ScoreTxt.text += "\n Χάνεις 20 νομίσματα.";
         }
         else if(Max == -2){
             coinsManager.win20();
-            ScoreTxt.text += "\n Κέρδισες 20 νομίσματα";
+            ScoreTxt.text += "\n Κέρδισες 20 νομίσματα καθότι ο κωδικός σου είναι πολύ ισχυρός.";
         }
         else if(score == 0){
             coinsManager.lose15(); //0 correct answers
-            ScoreTxt.text += "\n Χάνεις 15 νομίσματα";
+            ScoreTxt.text += "\n Χάνεις 15 νομίσματα.";
         }
         // print(coinsManager.score);
     }
@@ -106,7 +106,7 @@ public class QuizManager : MonoBehaviour
 
     public void correct(){
         Feedback.SetActive(true);
-        Feedbacktxt.text = "Η απάντηση σας ήταν σωστή";
+        Feedbacktxt.text = "Η απάντηση σου ήταν σωστή";
         score += 1;
         QnA.RemoveAt(currentQuestion);
         // generateQuestion();

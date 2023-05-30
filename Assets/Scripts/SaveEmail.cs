@@ -49,8 +49,19 @@ public class SaveEmail : MonoBehaviour
     public GameObject button1;
     public GameObject button2;
     public GameObject button3;
+    
+    public GameObject button4;
+    public GameObject button5;
+    public GameObject button6;
+
+    public GameObject button7;
+    public GameObject button8;
+    public GameObject button9;
 
     public GameObject continueButton;
+    public GameObject continueButton1;
+    public GameObject continueButton2;
+
 
     // public PrintResults a;
 
@@ -77,6 +88,46 @@ public class SaveEmail : MonoBehaviour
 
     public void DoesNotUnderstandMistake(){
         Social.text = "Έλα όυτε τώρα; Προσπάθησε ξανά! Θυμήσου τι περιείχε ο κωδικός σου!";
+        Max = -1;
+    }
+
+    public void UnderstandMistake1(){
+        button4.SetActive(false);
+        button5.SetActive(false);
+        button6.SetActive(false);
+
+        if(Max > 0){
+            EmailRes.text = "Τέλεια. Χαίρομαι που κατάλαβες το λάθος σου ευτυχώς υπάρχει χρόνος να λύσεις ακόμα το κουιζ όμως η μέγιστη ανταμοιβή που μπορείς να πάρεις είναι στις 2 σωστές απαντήσεις.\nΤρέχα να προλάβεις.\n\n\n Και να θυμάσαι καλό είναι οι κωδικοί μας να περιέχουν χαρακτήρες από όσο το δυνατόν περισσότερες κατηγορίες γίνεται καθώς και να έχουν μέγεθος τουλάχιστον 12 χαρακτήρες.";
+        }
+        else
+            EmailRes.text = "Τέλεια. Χαίρομαι που κατάλαβες το λάθος σου\nΔυστυχώς όμως δεν προλαβαίνεις να λύσεις το κουιζ, ο χάκερ μπορεί να επιτεθεί εκ νέου από στιγμή σε στιγμή.\n\n\nΚαι να θυμάσαι καλό είναι οι κωδικοί μας να περιέχουν χαρακτήρες από όσο το δυνατόν περισσότερες κατηγορίες γίνεται και να έχουν μέγεθος τουλάχιστον 12 χαρακτήρες.";
+
+        continueButton2.SetActive(true);
+
+    }
+
+    public void DoesNotUnderstandMistake1(){
+        EmailRes.text = "Έλα όυτε τώρα; Προσπάθησε ξανά! Θυμήσου τι περιείχε ο κωδικός σου!";
+        Max = -1;
+    }
+
+    public void UnderstandMistake2(){
+        button7.SetActive(false);
+        button8.SetActive(false);
+        button9.SetActive(false);
+
+        if(Max > 0){
+            BankRes.text = "Τέλεια. Χαίρομαι που κατάλαβες το λάθος σου ευτυχώς υπάρχει χρόνος να λύσεις ακόμα το κουιζ όμως η μέγιστη ανταμοιβή που μπορείς να πάρεις είναι στις 2 σωστές απαντήσεις.\nΤρέχα να προλάβεις.";
+        }
+        else
+            BankRes.text = "Τέλεια. Χαίρομαι που κατάλαβες το λάθος σου\nΔυστυχώς όμως δεν προλαβαίνεις να λύσεις το κουιζ, ο χάκερ μπορεί να επιτεθεί εκ νέου από στιγμή σε στιγμή.";
+
+        continueButton1.SetActive(true);
+
+    }
+
+    public void DoesNotUnderstandMistake2(){
+        BankRes.text = "Έλα όυτε τώρα; Προσπάθησε ξανά! Θυμήσου τι περιείχε ο κωδικός σου!";
         Max = -1;
     }
 
@@ -235,23 +286,33 @@ public class SaveEmail : MonoBehaviour
         bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
         bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
         bool result3 = Regex.IsMatch(pass, "^[a-zA-Z0-9!@#$&()\\-`.+,/\"]*$");
-
+        bool result4 = Regex.IsMatch(pass, "^[!@#$&()\\-`.+,/\"]*$");
+        bool result5 = Regex.IsMatch(pass, "^[0-9!@#$&()\\-`.+,/\"]*$");
+        bool result6 = Regex.IsMatch(pass, "^[a-zA-Z!@#$&()\\-`.+,/\"]*$");
 
         if (same || pass_length < 8){
-            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ αδύναμος. \n Μπορείς μήπως να σκεφτείς γιατί;";
+            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ αδύναμος. \nΜπορείς μήπως να σκεφτείς γιατί;";
+            button4.SetActive(true);
+            button5.SetActive(true);
+            button6.SetActive(true);
             Max = -10;
         }
-        else if((result1 && !result2 && pass_length >= 8) || (!result1 && result2 && pass_length >= 8)){
-            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ απλός. \n Μπορείς μήπως να σκεφτείς γιατί;";
+        else if((result1 && !result2 && !result4 && pass_length >= 8) || (!result1 && result2 && !result4 && pass_length >= 8) || (!result1 && !result2 && result4 && pass_length >= 8)){
+            ResSocial = "Ο κωδικός σου είναι απλός. \nΜπορείς μήπως να σκεφτείς γιατί;";
+            button4.SetActive(true);
+            button5.SetActive(true);
+            button6.SetActive(true);
             Max = 2;
         }
-        else if(result && pass_length >= 8){
-            ResSocial = "Δυστυχώς ο κωδικός σου είναι πολύ απλός. \n Μπορείς μήπως να σκεφτείς γιατί;";
+        else if((result && !result1 && !result2 && pass_length >= 8) || (result5 && !result4 && !result2 && pass_length >= 8) || (result6 && !result4 && !result1 && pass_length >= 8)){
+            ResSocial = "Ο κωδικός σου είναι μέτριος. Αυτό σημαίνει πως μπορείς να λύσεις το κουιζ με μέγιστη ανταμοιβή στις 3 σωστές απαντήσεις.\nΓια να τον κάνεις πιο δυνατό θα μπορούσες να χρησιμοποιήσεις και κάποιον ειδικό χαρακτήρα.";
             Max = 3;
+            continueButton2.SetActive(true);
         }
         else if(result3 && pass_length >= 8 && !same){
             ResSocial = "Ο κωδικός σου είναι ισχυρός. Δεν χρειάζεται να λύσεις το κουιζ";
             Max = -2;
+            continueButton2.SetActive(true);
         }
         else{
             ResSocial = "Συνέβη κάτι μη αναμενόμενο. Μπορείς να λύσεις το κουιζ με μέγιστη ανταμοιβή τη 1 σωστή απάντηση";
@@ -271,8 +332,13 @@ public class SaveEmail : MonoBehaviour
         bool same1 = (pass == pass_email);
         bool result = Regex.IsMatch(pass, "^[a-zA-Z0-9]+$" );
         bool result1 = Regex.IsMatch(pass, "^[a-zA-Z]+$");
+        bool result10 = Regex.IsMatch(pass, "^[a-z]+$");
+        bool result11 = Regex.IsMatch(pass, "^[A-Z]+$");
         bool result2 = Regex.IsMatch(pass, "^[0-9]+$");
         bool result3 = Regex.IsMatch(pass, "^[a-zA-Z0-9!@#$&()\\-`.+,/\"]*$");
+
+        bool result7 = Regex.IsMatch(pass, "^[0-9!@#$&()\\-`.+,/\"]*$");
+        bool result8 = Regex.IsMatch(pass, "^[a-zA-Z!@#$&()\\-`.+,/\"]*$");
 
         string last_char = pass.Substring(pass_length - 1);
 
@@ -283,24 +349,38 @@ public class SaveEmail : MonoBehaviour
 
         bool result6 = Regex.IsMatch(rest, "^[a-zA-Z0-9!@#$&()\\-`.+,/\"]*$");
 
-        if (same || same1 || result || result1 || result2 || pass_length < 8){
-            ResBank = "Ο κωδικός σας είναι πολύ αδυναμος, δεν μπορείτε να λύσετε το κουιζ";
+        if (same || same1 || result || result1 || result2 || pass_length < 12){
+            
+            button7.SetActive(true);
+            button8.SetActive(true);
+            button9.SetActive(true);
+
+            ResBank = "Ο κωδικός σου είναι πολύ αδυναμος.\nΜπορείς μήπως να σκεφτείς γιατί;";
             Max = -10;
         }
-        else if(result4 && result5 && pass_length >= 8){
-            ResBank = "Ο κωδικός σας είναι απλός. Μπορείτε να λύσετε το κουιζ αλλά με μέγιστη ανταμοιβή τις 2 σωστές απαντήσεις";
+        else if((result7 || result8) && pass_length >= 12){
+
+            button7.SetActive(true);
+            button8.SetActive(true);
+            button9.SetActive(true);
+
+            ResBank = "Ο κωδικός σου είναι απλός.\nΜπορείς μήπως να σκεφτείς γιατί;";
             Max = 2;
         }
-        else if(result6 && pass_length >= 8){
-            ResBank = "Ο κωδικός σας είναι μέτριος. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις";
+        else if(result3 && pass_length >= 12 && pass_length <= 16){
+            ResBank = "Ο κωδικός σου είναι μέτριος. Μπορείς να λύσεις το κουιζ με μέγιστη ανταμοιβή τις 3 σωστές απαντήσεις";
             Max = 3;
+            continueButton1.SetActive(true);
         }
-        // else if(result3 && pass_length >= 8 && !same){
-        //     ResBank = "Ο κωδικός σας είναι ισχυρός. Δεν χρειάζετα να λύσετε το κουιζ";
-        // }
+        else if(result3 && pass_length > 17){
+            ResBank = "Ο κωδικός σου είναι ισχυρός. Δεν χρειάζεται να λύσεις το κουιζ";
+            Max = -2;
+            continueButton1.SetActive(true);
+        }
         else{
-            ResBank = "Συνέβη κάτι μη αναμενόμενο. Μπορείτε να λύσετε το κουιζ με μέγιστη ανταμοιβή τη 1 σωστή απάντηση";
+            ResBank = "Συνέβη κάτι μη αναμενόμενο. Μπορείς να λύσεις το κουιζ με μέγιστη ανταμοιβή τη 1 σωστή απάντηση";
             Max = 1;
+            continueButton1.SetActive(true);
         }
 
         BankRes.text = ResBank;
