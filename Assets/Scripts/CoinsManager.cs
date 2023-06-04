@@ -62,6 +62,10 @@ public class CoinsManager : MonoBehaviour
          scoreText.text = score.ToString() + " Νομίσματα";
     }
 
+    public int getCoins(){
+        return this.score;
+    }
+
 }
 
 

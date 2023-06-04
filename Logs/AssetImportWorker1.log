@@ -15,7 +15,7 @@ C:/Users/maria/Thesis
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50060
+57833
 Successfully changed project path to: C:/Users/maria/Thesis
 C:/Users/maria/Thesis
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/maria/Thesis
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [920] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2128509651 [EditorId] 2128509651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RKA1K1R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24172] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2461090285 [EditorId] 2461090285 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RKA1K1R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [920] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2128509651 [EditorId] 2128509651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RKA1K1R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24172] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2461090285 [EditorId] 2461090285 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RKA1K1R) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 78.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 80.47 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
@@ -67,78 +67,78 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56380
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004520 seconds.
+Registered in 0.004843 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 80.21 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 67.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.576 seconds
+- Completed reload, in  0.568 seconds
 Domain Reload Profiling:
-	ReloadAssembly (577ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (568ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (413ms)
-			LoadAssemblies (68ms)
+		EndReloadAssembly (386ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (80ms)
+			SetupTypeCache (95ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (266ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (229ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (80ms)
+				RefreshPlugins (68ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (133ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				ProcessInitializeOnLoadAttributes (115ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007630 seconds.
+Registered in 0.009636 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\maria\Thesis\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\maria\Thesis\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.11 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 65.03 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.035 seconds
+- Completed reload, in  0.847 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1036ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (847ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (818ms)
-			LoadAssemblies (97ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (668ms)
+			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (226ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (379ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (347ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (181ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -146,13 +146,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3770 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 40 unused Assets / (204.5 KB). Loaded Objects now: 4245.
 Memory consumption went from 158.8 MB to 158.6 MB.
-Total: 2.933500 ms (FindLiveObjects: 0.266000 ms CreateObjectMapping: 0.109400 ms MarkObjects: 2.420900 ms  DeleteObjects: 0.135900 ms)
+Total: 2.739000 ms (FindLiveObjects: 0.227100 ms CreateObjectMapping: 0.084600 ms MarkObjects: 2.222900 ms  DeleteObjects: 0.203600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,65 +166,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 23578.422993 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Split Bones@3x.png
-  artifactKey: Guid(6b35476d10ed5614a949de8f7c45b534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Split Bones@3x.png using Guid(6b35476d10ed5614a949de8f7c45b534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566868352ae744be95d4366a44aa4a1a') in 0.086967 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.768675 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Paste@4x.png
-  artifactKey: Guid(5d4fa2fdecdadcb468baaedc792cc439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Paste@4x.png using Guid(5d4fa2fdecdadcb468baaedc792cc439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '954937fea16d045bbabdae28f9e9f57a') in 0.012796 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.525659 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Paste@2x.png
-  artifactKey: Guid(cd0250057a3f07346b60675b355c3e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Paste@2x.png using Guid(cd0250057a3f07346b60675b355c3e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05af89a5c8d792c6e2f4333ffe0dba27') in 0.013293 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Parent_Bone@4x.png
-  artifactKey: Guid(03b3f669dc5706a4592344c6385af858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Parent_Bone@4x.png using Guid(03b3f669dc5706a4592344c6385af858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5014705a51e13413f723a27dc82e1f') in 0.008840 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Paste@2x.png
-  artifactKey: Guid(54b8604d8a7085842917d5b83ca73854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Paste@2x.png using Guid(54b8604d8a7085842917d5b83ca73854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a213024e652164e34d61c601745cf40') in 0.017045 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Copy.png
-  artifactKey: Guid(678095381d851334fb550c5032ba1a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Copy.png using Guid(678095381d851334fb550c5032ba1a81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b5620c3317192152eb40b4cc5dcd92') in 0.013688 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.465609 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Bone_Influence@3x.png
-  artifactKey: Guid(68e5a78013e33f247822a837e55b0ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Bone_Influence@3x.png using Guid(68e5a78013e33f247822a837e55b0ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5910017cf672bb012c98abdda222da') in 0.009098 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Bone_Influence@2x.png
-  artifactKey: Guid(0779ad3feec52124e97114bcbb12ef13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Selected/Bone_Influence@2x.png using Guid(0779ad3feec52124e97114bcbb12ef13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4c3fdb5ea823ae92194cc110c3aef5') in 0.009657 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone_Influence@4x.png
-  artifactKey: Guid(c7aa62ae78ffca0498c89e5f45f94c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone_Influence@4x.png using Guid(c7aa62ae78ffca0498c89e5f45f94c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fadfcc74be745a0485a9800de4bf31c') in 0.008241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone@2x.png
-  artifactKey: Guid(d6a44ab95b0def041a7929981a2c23a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.animation/Editor/Assets/SkinningModule/Icons/Light/Bone@2x.png using Guid(d6a44ab95b0def041a7929981a2c23a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fffc2ced18bd0f62b939fabb4cd9a32') in 0.021618 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 378845.148407 seconds.
+  path: Assets/Scripts/SaveEmail.cs
+  artifactKey: Guid(e13713099c2de5a479dee33a34933191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SaveEmail.cs using Guid(e13713099c2de5a479dee33a34933191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7e607319e3da6c7b4c243b56bb52f5') in 0.020909 seconds 

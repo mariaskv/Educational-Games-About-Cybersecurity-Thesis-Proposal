@@ -31,6 +31,10 @@ public class QuizManager : MonoBehaviour
 
     int TotalQuestions = 0;
 
+    public bool end;
+
+    public bool quiz4;
+
     private void Start(){
 
         Max = system.Max;
@@ -45,7 +49,23 @@ public class QuizManager : MonoBehaviour
     public void GameOver(){
         QuizPanel.SetActive(false);
         QuizEnd.SetActive(true);
-        if(Max < 0){
+        if(end){
+            int score1 = coinsManager.getCoins() / 5;
+            ScoreTxt.text = "Τα κατάφερες, το τελικό σου σκορ είναι: " + (score1 + score);
+            
+        }
+        else if(quiz4){
+            if(score >= 2){
+                ScoreTxt.text = "Τα πήγες πολύ καλά στο κουιζ. Η πόλη σου προσφέρει την προστασία των φυσικών μέσων καθώς και 15 νομίσματα ως ανταμοιβή.";
+                coinsManager.win15();
+            }
+            else{
+                ScoreTxt.text = "Δυστυχώς έχεις ακόμα πολλά να μάθεις. Δεν είσαι ακόμα έτοιμος να δεχθείς την δωρεάν προστασία φυσικών μέσων. Χάνεις 10 νομίσματα";
+                coinsManager.lose5();
+                coinsManager.lose5();
+            }
+        }
+        else if(Max < 0){
             ScoreTxt.text = "Δεν χρειάζεται να λύσεις το κουιζ συνέχισε παρακάτω.";
         }
         else{
