@@ -6,10 +6,10 @@ using TMPro;
 public class UseHelp : MonoBehaviour
 {
 
-    string help1 = "Help1";
+    string help1 = "";
     bool h1 = true;
 
-    string help2 = "Help2";
+    string help2 = "";
     bool h2 = true;
 
     public TMP_Text HelpResult;

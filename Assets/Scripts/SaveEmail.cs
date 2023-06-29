@@ -11,6 +11,8 @@ public class SaveEmail : MonoBehaviour
 {
 
     CoinsManager c;
+    
+    public CoinsManager coinsManager;
 
     public InputField Email;
     public InputField Password;
@@ -27,6 +29,9 @@ public class SaveEmail : MonoBehaviour
     string TempEmailBank;
     string TempPasswordBank;
 
+    public TMP_InputField Pin;
+    string TempPin;
+
     public InputField NewPasswordSocial;
     public InputField NewPasswordEmail;
     public InputField NewPasswordBank;
@@ -37,14 +42,18 @@ public class SaveEmail : MonoBehaviour
     public GameObject popupWrongEmail;
     public GameObject popupWrongSocial;
     public GameObject popupWrongBank;
+    public GameObject popupEmptyPin;
+    public GameObject Box2;
 
     public string ResSocial;
     public string ResEmail;
     public string ResBank;
+    public string ResPin;
 
     public TMP_Text Social;
     public TMP_Text EmailRes;
     public TMP_Text BankRes;
+    public TMP_Text PinRes;
 
     public GameObject button1;
     public GameObject button2;
@@ -64,6 +73,12 @@ public class SaveEmail : MonoBehaviour
 
 
     // public PrintResults a;
+
+    public void Update(){
+        if(coinsManager.getCoins() <= 0){
+            print("Game Over");
+        }
+    }
 
     public int Max;
 
@@ -184,6 +199,22 @@ public class SaveEmail : MonoBehaviour
         }
     }
 
+    public void SavePin(){
+        string pass = Pin.text;
+        bool flag = Regex.IsMatch(pass, "^[0-9]+$");
+        if(String.IsNullOrEmpty(Pin.text) == true){
+            popupEmptyPin.SetActive(true);
+        }
+        else if(!flag){
+            popupEmptyPin.SetActive(true);
+        }
+        else{
+            TempPin = Pin.text;
+            PlayerPrefs.SetString("pin", TempPin);
+            CheckPin();
+        }
+    }
+
     public void ChangePasswordSocial(){
 
         TempPasswordSocial = NewPasswordSocial.text;
@@ -218,6 +249,62 @@ public class SaveEmail : MonoBehaviour
         // print(TempPasswordBank);
         // print(CheckPasswordSocial());
 
+    }
+
+    public void CheckPin(){
+        string pass = PlayerPrefs.GetString("pin");
+        bool result = (pass.Length < 4);
+
+        string theYear = System.DateTime.UtcNow.ToLocalTime().ToString("yyyy");
+        bool result1 = (pass == theYear);
+
+        // int pass_int = int.Parse(pass);
+
+        List<int> digits = new List<int>();
+        for(int i = 0; i < pass.Length; i++){
+            digits.Add(int.Parse(Char.ToString(pass[i])));
+        }
+
+        bool follow = true;
+        int before = digits[0];
+        for(int i = 1; i < pass.Length; i++){
+            int current = digits[i];
+            if(current != before + 1){
+                follow = false;
+                break;
+            }
+            before = current;
+        }
+
+        bool follow1 = true;
+        before = digits[0];
+        for(int i = 1; i < pass.Length; i++){
+            int current = digits[i];
+            if(current != before - 1){
+                follow1 = false;
+                break;
+            }
+            before = current;
+        }
+
+        if(result){
+            ResPin = "Το pin σας είναι πολύ μικρό σε μέγεθος και όχι αρκετά ασφαλές. Δεν μπορείτε να λάβετε την επιδότηση και πληρώνετε ένα παράβολο αξίας 20ε.";
+            coinsManager.lose20();
+        }
+        else if(result1){
+            ResPin = "Το pin σας είναι το τρέχον έτος και αυτό το καθιστά μη ασφαλές. Δεν μπορείτε να λάβετε την επιδότηση και πληρώνετε ένα παράβολο αξίας 20ε.";
+            coinsManager.lose20();
+        }
+        else if(follow || follow1){
+            ResPin = "Το pin σας αποτελείται από διαδοχικά ψηφία και αυτό το καθιστά μη ασφαλές. Δεν μπορείτε να λάβετε την επιδότηση και πληρώνετε ένα παράβολο αξίας 20ε.";
+            coinsManager.lose20();
+        }
+        else{
+            ResPin = "Το pin σας είναι ασφαλές. Λαμβάνετε την επιδότηση για την προστασία των ψηφιακών μέσων και επιπλέον κερδίζετε 15 νομίσματα.";
+            coinsManager.win15();
+        }
+        PinRes.text = ResPin;
+        Box2.SetActive(true);
     }
 
 
@@ -260,7 +347,7 @@ public class SaveEmail : MonoBehaviour
         else {
             ResSocial = "Ο κωδικός σου είναι ισχυρός καθότι περιέχει τόσο γράμματα του λατινικού αλφαβήτου, όσο ψηφία και ειδικούς χαρακτήρες. Δεν χρειάζεται να λύσεις το κουιζ. Ωστόσο να θυμάσαι πως οι κωδικοί μας είναι καλό να έχουν τουλάχιστον 8 χαρακτήρες μέγεθος.";
             continueButton.SetActive(true);
-            Max = -10;
+            Max = -2;
         }
         Social.text = ResSocial;
     }
