@@ -12,21 +12,44 @@ public class HelpManager : MonoBehaviour
 
     public GameObject button1;
     public GameObject button2;
+    public GameObject button3;
+
 
     public GameObject Help1_popup;
     public GameObject Help2_popup;
 
     public TMP_Text Result;
+    public GameObject Text1;
+
+    public void DeActivate(){
+        Help1_popup.SetActive(false);
+        Help2_popup.SetActive(false);
+        Text1.SetActive(!true);
+        button1.SetActive(!true);
+        button2.SetActive(!true);
+        button3.SetActive(!true);
+
+    }
+
+    public void init(){
+        Help1_popup.SetActive(false);
+        Help2_popup.SetActive(false);
+        Text1.SetActive(true);
+        button1.SetActive(true);
+        button2.SetActive(true);
+        button3.SetActive(true);
+
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        if(available1){
-            button1.SetActive(true);
-        }
-            if(available2){
-            button2.SetActive(true);
-        }
+        // if(available1){
+        //     button1.SetActive(true);
+        // }
+        //     if(available2){
+        //     button2.SetActive(true);
+        // }
     }
 
     // Update is called once per frame
@@ -34,9 +57,11 @@ public class HelpManager : MonoBehaviour
     {
         if(!available1){
             button1.SetActive(!true);
+            // Help1_popup.SetActive(false);
         }
         if(!available2){
             button2.SetActive(!true);
+            // Help2_popup.SetActive(false);
         }
         
     }

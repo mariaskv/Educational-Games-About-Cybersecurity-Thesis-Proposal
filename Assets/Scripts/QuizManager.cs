@@ -37,6 +37,8 @@ public class QuizManager : MonoBehaviour
 
     private void Start(){
 
+        score = 0;
+
         Max = system.Max;
         if(Max < 0){
             GameOver();

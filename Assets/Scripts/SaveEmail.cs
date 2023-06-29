@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class SaveEmail : MonoBehaviour
 {
@@ -71,12 +72,12 @@ public class SaveEmail : MonoBehaviour
     public GameObject continueButton1;
     public GameObject continueButton2;
 
-
+    public string next_level = "LOSE";
     // public PrintResults a;
 
     public void Update(){
         if(coinsManager.getCoins() <= 0){
-            print("Game Over");
+            SceneManager.LoadScene(next_level);
         }
     }
 
@@ -157,6 +158,7 @@ public class SaveEmail : MonoBehaviour
             TempEmail = Email.text;
             PlayerPrefs.SetString("tutorialTextKeyName", TempEmail);
 
+            Password.text.Replace(" ", "");
             TempPassword = Password.text;
             PlayerPrefs.SetString("emailpass", TempPassword);
             popup.SetActive(true);
@@ -174,6 +176,7 @@ public class SaveEmail : MonoBehaviour
             TempEmailSocial = EmailSocial.text;
             PlayerPrefs.SetString("socialemail", TempEmailSocial);
 
+            PasswordSocial.text.Replace(" ", "");
             TempPasswordSocial = PasswordSocial.text;
             PlayerPrefs.SetString("socialpass", TempPasswordSocial);
             PlayerPrefs.Save();
@@ -193,6 +196,7 @@ public class SaveEmail : MonoBehaviour
             TempEmailBank = EmailBank.text;
             PlayerPrefs.SetString("tutorialTextKeyName", TempEmailBank);
 
+            PasswordBank.text.Replace(" ", "");
             TempPasswordBank = PasswordBank.text;
             PlayerPrefs.SetString("bankpass", TempPasswordBank);
             popup2.SetActive(true);
@@ -217,6 +221,7 @@ public class SaveEmail : MonoBehaviour
 
     public void ChangePasswordSocial(){
 
+        NewPasswordSocial.text.Replace(" ", "");
         TempPasswordSocial = NewPasswordSocial.text;
         PlayerPrefs.SetString("socialpass", TempPasswordSocial);
         PlayerPrefs.Save();
@@ -229,6 +234,7 @@ public class SaveEmail : MonoBehaviour
 
     public void ChangePasswordEmail(){
 
+        NewPasswordEmail.text.Replace(" ", "");
         TempPassword = NewPasswordEmail.text;
         PlayerPrefs.SetString("emailpass", TempPassword);
         PlayerPrefs.Save();
@@ -241,6 +247,7 @@ public class SaveEmail : MonoBehaviour
 
     public void ChangePasswordBank(){
 
+        NewPasswordBank.text.Replace(" ", "");
         TempPasswordBank = NewPasswordBank .text;
         PlayerPrefs.SetString("bankpass", TempPasswordBank);
         PlayerPrefs.Save();
