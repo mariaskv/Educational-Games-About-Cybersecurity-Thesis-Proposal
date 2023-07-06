@@ -39,9 +39,11 @@ public class QuizManager : MonoBehaviour
 
         score = 0;
 
-        Max = system.Max;
-        if(Max < 0){
-            GameOver();
+        if(!end && !quiz4){
+            Max = system.Max;
+            if(Max < 0){
+                GameOver();
+            }
         }
         TotalQuestions = QnA.Count;
         generateQuestion();
@@ -53,7 +55,7 @@ public class QuizManager : MonoBehaviour
         QuizEnd.SetActive(true);
         if(end){
             int score1 = coinsManager.getCoins() / 5;
-            ScoreTxt.text = "Τα κατάφερες, το τελικό σου σκορ είναι: " + (score1 + score);
+            ScoreTxt.text = "Τα κατάφερες, το τελικό σου σκορ είναι: " + (score1 + score) + ".\n" + "Το σκορ υπολογίζεται ως εξής: \nΠόσες ερωτήσεις απάντησες σωστά στο quiz  + 1 πόντος για κάθε 5 νομίσματα που είχες μέχρι αυτό το σημείο.";
             
         }
         else if(quiz4){
@@ -67,8 +69,11 @@ public class QuizManager : MonoBehaviour
                 coinsManager.lose5();
             }
         }
-        else if(Max < 0){
-            ScoreTxt.text = "Δεν χρειάζεται να λύσεις το κουιζ συνέχισε παρακάτω.";
+        else if(Max == -10){
+            ScoreTxt.text = "Ο κωδικός σου είναι πολύ αδύναμος και δεν μπορείς να λύσεις το κουιζ.";
+        }
+        else if(Max == -2){
+            ScoreTxt.text = "Ο κωδικός σου είναι πολύ ισχυρός και επομένως δεν χρειάζεται να λύσεις το κουίζ.";
         }
         else{
             ScoreTxt.text = "Το σκορ σου είναι: " + score + "/" + TotalQuestions;
@@ -81,8 +86,10 @@ public class QuizManager : MonoBehaviour
         //extra week psw -> lose 20
 
         //very strong psw -> win 20
-
-        if(score >= 1 && Max == 1){
+        if(end){
+            ScoreTxt.text = "";
+        }
+        else if(score >= 1 && Max == 1){
             coinsManager.win5(); 
             ScoreTxt.text += "\n Κέρδισες 5 νομίσματα.";
         }
@@ -128,7 +135,7 @@ public class QuizManager : MonoBehaviour
 
     public void correct(){
         Feedback.SetActive(true);
-        Feedbacktxt.text = "Η απάντηση σου ήταν σωστή";
+        Feedbacktxt.text = "Η απάντηση σου ήταν σωστή \n" + QnA[currentQuestion].Feedback;
         score += 1;
         QnA.RemoveAt(currentQuestion);
         // generateQuestion();
@@ -136,7 +143,7 @@ public class QuizManager : MonoBehaviour
 
     public void wrong(){
         Feedback.SetActive(true);
-        Feedbacktxt.text = "Η απάντηση σας ήταν λάθος. Η σωστή απάντηση στην ερώτηση: " + QnA[currentQuestion].Question + " είναι: " + QnA[currentQuestion].Answers[QnA[currentQuestion].CorrectAnswer - 1];
+        Feedbacktxt.text = "Δυστυχώς η απάντηση σου ήταν λάθος. \n" + QnA[currentQuestion].Feedback;
         QnA.RemoveAt(currentQuestion);
         // generateQuestion();
     }
@@ -162,7 +169,6 @@ public class QuizManager : MonoBehaviour
             SetAnswers();
         }
         else{
-            print("Out of Questions");
             GameOver();
         }
 

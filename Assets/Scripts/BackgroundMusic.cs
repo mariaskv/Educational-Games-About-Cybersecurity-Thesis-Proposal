@@ -20,6 +20,21 @@ public class BackgroundMusic : MonoBehaviour
         // }
     }
 
+    void Update(){
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Time.timeScale = 1 - Time.timeScale;
+            if(Time.timeScale == 0){
+                AudioListener.pause = true;
+            }
+            else{
+                AudioListener.pause = false;
+            }
+        }
+        if(Input.GetKeyDown(KeyCode.Space)){
+            AudioListener.pause = true;
+        }
+    }
+
     public void On(){
         AudioListener.volume = 0;
         on.SetActive(false);
@@ -28,7 +43,7 @@ public class BackgroundMusic : MonoBehaviour
     }
 
     public void Off(){
-        AudioListener.volume = 0.8f;
+        AudioListener.volume = 1.5f;
         off.SetActive(false);
         on.SetActive(true);
         

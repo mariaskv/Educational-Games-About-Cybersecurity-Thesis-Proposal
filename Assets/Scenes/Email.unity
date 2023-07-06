@@ -2472,7 +2472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &81495087
 Transform:
   m_ObjectHideFlags: 0
@@ -4830,6 +4830,11 @@ MonoBehaviour:
     - Monkey
     - 123456
     - iloveyou
+    Feedback: "\u039F \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2 \"123456\" \u03B1\u03C0\u03BF\u03C4\u03B5\u03BB\u03B5\u03AF\u03C4\u03B1\u03B9
+      \u03B1\u03C0\u03CC 6 \u03B4\u03B9\u03B1\u03B4\u03BF\u03C7\u03B9\u03BA\u03BF\u03CD\u03C2
+      \u03B1\u03C1\u03B9\u03B8\u03BC\u03BF\u03CD\u03C2 \u03BA\u03B1\u03B9 \u03B5\u03AF\u03BD\u03B1\u03B9
+      \u03C0\u03BF\u03BB\u03CD \u03B5\u03CD\u03BA\u03BF\u03BB\u03BF \u03BA\u03B1\u03BD\u03B5\u03AF\u03C2
+      \u03BD\u03B1 \u03C4\u03BF\u03BD \u03BC\u03B1\u03BD\u03C4\u03AD\u03C8\u03B5\u03B9."
     CorrectAnswer: 3
   - Question: "\u0388\u03BD\u03B1\u03C2 \u03B4\u03C5\u03BD\u03B1\u03C4\u03CC\u03C2
       \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2 \u03B8\u03B1 \u03AD\u03C0\u03C1\u03B5\u03C0\u03B5
@@ -4841,6 +4846,12 @@ MonoBehaviour:
       \u03B3\u03C1\u03AC\u03BC\u03BC\u03B1\u03C4\u03B1"
     - "\u0395\u03B9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2 \u03A7\u03B1\u03C1\u03B1\u03BA\u03C4\u03AE\u03C1\u03B5\u03C2"
     - "\u038C\u03BB\u03B1 \u03C4\u03B1 \u03C0\u03B1\u03C1\u03B1\u03C0\u03AC\u03BD\u03C9"
+    Feedback: "\u0388\u03BD\u03B1\u03C2 \u03BA\u03B1\u03BB\u03CC\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2
+      \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2 \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9
+      \u03BD\u03B1 \u03C0\u03B5\u03C1\u03B9\u03AD\u03C7\u03B5\u03B9 \u03C7\u03B1\u03C1\u03B1\u03BA\u03C4\u03AE\u03C1\u03B5\u03C2
+      \u03B1\u03C0\u03CC \u03CC\u03C3\u03BF \u03C4\u03BF \u03B4\u03C5\u03BD\u03B1\u03C4\u03CC\u03BD
+      \u03C0\u03B5\u03C1\u03B9\u03C3\u03C3\u03CC\u03C4\u03B5\u03C1\u03B5\u03C2 \u03BA\u03B1\u03C4\u03B7\u03B3\u03BF\u03C1\u03AF\u03B5\u03C2
+      \u03C7\u03B1\u03C1\u03B1\u03BA\u03C4\u03AE\u03C1\u03C9\u03BD."
     CorrectAnswer: 4
   - Question: "\u039A\u03AC\u03B8\u03B5 \u03C0\u03CC\u03C4\u03B5 \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9
       \u03BD\u03B1 \u03B1\u03BB\u03BB\u03AC\u03B6\u03B5\u03B9 \u03BF \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2
@@ -4855,6 +4866,13 @@ MonoBehaviour:
     - "\u039A\u03AC\u03B8\u03B5 3-6 \u03BC\u03AE\u03BD\u03B5\u03C2"
     - "\u03A0\u03BF\u03C4\u03AD \u03B1\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C0\u03BF\u03BB\u03CD
       \u03B4\u03C5\u03BD\u03B1\u03C4\u03CC\u03C2"
+    Feedback: "\u03A4\u03BF\u03C5\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2
+      \u03BC\u03B1\u03C2 \u03C3\u03B5 \u03C3\u03B7\u03BC\u03B1\u03BD\u03C4\u03B9\u03BA\u03AD\u03C2
+      \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9
+      \u03BD\u03B1 \u03C4\u03BF\u03C5\u03C2 \u03B1\u03BB\u03BB\u03AC\u03B6\u03BF\u03C5\u03BC\u03B5
+      \u03B1\u03BD\u03AC 3 \u03BC\u03B5 6 \u03BC\u03AE\u03BD\u03B5\u03C2 \u03AD\u03C4\u03C3\u03B9
+      \u03CE\u03C3\u03C4\u03B5 \u03BD\u03B1 \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B4\u03CD\u03C3\u03BA\u03BF\u03BB\u03BF
+      \u03BD\u03B1 \u03C5\u03C0\u03BF\u03BA\u03BB\u03B1\u03C0\u03BF\u03CD\u03BD."
     CorrectAnswer: 3
   options:
   - {fileID: 268569148}
@@ -5804,6 +5822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1154182749}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 155082821}
   textLabel: {fileID: 412789373}
   testDialogue: {fileID: 11400000, guid: 5435fa75f37a2e9439cb0d3557841d20, type: 2}
@@ -6617,6 +6637,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1215747445}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 1456595278}
   textLabel: {fileID: 1571091230}
   testDialogue: {fileID: 11400000, guid: a5889223c58afa846baf2328a1c14fa2, type: 2}
@@ -6915,6 +6937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 322555148}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 182692018}
   textLabel: {fileID: 614679662}
   testDialogue: {fileID: 11400000, guid: a5889223c58afa846baf2328a1c14fa2, type: 2}
@@ -7495,6 +7519,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 0}
   textLabel: {fileID: 0}
   testDialogue: {fileID: 0}
@@ -9845,6 +9871,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1296797126}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 632584476}
   textLabel: {fileID: 622188290}
   testDialogue: {fileID: 11400000, guid: f1ca6e4dac8272648a4c8074a4aa4e35, type: 2}
@@ -10154,6 +10182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1652018906}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 1135561661}
   textLabel: {fileID: 93028165}
   testDialogue: {fileID: 11400000, guid: a5889223c58afa846baf2328a1c14fa2, type: 2}
@@ -10894,7 +10924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2, y: -0.39999962}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &289394286
@@ -10917,7 +10947,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u039D\u03B1\u03B9\n"
+  m_text: "\u039D\u03B1\u03B9, \u03B8\u03B1 \u03AE\u03B8\u03B5\u03BB\u03B1 \u03BD\u03B1
+    \u03B1\u03BD\u03B1\u03C6\u03AD\u03C1\u03C9 \u03C4\u03BF \u03C0\u03B5\u03C1\u03B9\u03C3\u03C4\u03B1\u03C4\u03B9\u03BA\u03CC
+    \u03C3\u03C4\u03B7\u03BD \u03B4\u03AF\u03C9\u03BE\u03B7 \u03B7\u03BB\u03B5\u03BA\u03C4\u03C1\u03BF\u03BD\u03B9\u03BA\u03BF\u03CD
+    \u03B5\u03B3\u03BA\u03BB\u03AE\u03BC\u03B1\u03C4\u03BF\u03C2."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 959f9858c764752469ba5f175ec27345, type: 2}
   m_sharedMaterial: {fileID: -3255597144125338330, guid: 959f9858c764752469ba5f175ec27345, type: 2}
@@ -10944,8 +10977,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10980,7 +11013,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 10.752228, y: 4.449895, z: 10.304237, w: 5.134446}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -11432,6 +11465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1228341737}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 1625607803}
   textLabel: {fileID: 1828427791}
   testDialogue: {fileID: 11400000, guid: b0b0ccf4b1e53164b89130ace15ceea6, type: 2}
@@ -14982,6 +15017,15 @@ MonoBehaviour:
       \u03BA\u03C9\u03B4\u03B9\u03BA\u03CE\u03BD \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2"
     - "\u038C\u03C4\u03B1\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B7 \u03B7\u03BC\u03B5\u03C1\u03BF\u03BC\u03B7\u03BD\u03AF\u03B1
       \u03B3\u03AD\u03BD\u03BD\u03B7\u03C3\u03B7\u03C2 \u03C4\u03BF\u03C5 \u03C7\u03C1\u03AE\u03C3\u03C4\u03B7"
+    Feedback: "\u0388\u03BD\u03B1\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2
+      \u03C0\u03BF\u03C5 \u03C0\u03B5\u03C1\u03B9\u03BB\u03B1\u03BC\u03B2\u03AC\u03BD\u03B5\u03B9
+      \u03BA\u03AC\u03C0\u03BF\u03B9\u03B1 \u03B3\u03BD\u03C9\u03C3\u03C4\u03AE \u03C0\u03BB\u03B7\u03C1\u03BF\u03C6\u03BF\u03C1\u03AF\u03B1,
+      \u03CC\u03C0\u03C9\u03C2 \u03C4\u03B7\u03BD \u03B7\u03BC\u03B5\u03C1\u03BF\u03BC\u03B7\u03BD\u03AF\u03B1
+      \u03B3\u03AD\u03BD\u03BD\u03B7\u03C3\u03B7\u03C2 \u03C4\u03BF\u03C5 \u03C7\u03C1\u03AE\u03C3\u03C4\u03B7,
+      \u03B8\u03B5\u03C9\u03C1\u03B5\u03AF\u03C4\u03B1\u03B9 \u03C0\u03C9\u03C2 \u03B5\u03AF\u03BD\u03B1\u03B9
+      \u03B5\u03CD\u03BA\u03BF\u03BB\u03BF \u03BD\u03B1 \u03B5\u03BD\u03C4\u03BF\u03C0\u03B9\u03C3\u03C4\u03B5\u03AF
+      \u03BA\u03B1\u03B9 \u03B4\u03B5\u03BD \u03B8\u03B5\u03C9\u03C1\u03B5\u03AF\u03C4\u03B1\u03B9
+      \u03B9\u03C3\u03C7\u03C5\u03C1\u03CC\u03C2."
     CorrectAnswer: 4
   - Question: "\u039C\u03C0\u03BF\u03C1\u03BF\u03CD\u03BC\u03B5 \u03BD\u03B1 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
       \u03C4\u03BF\u03BD \u03AF\u03B4\u03B9\u03BF \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC
@@ -14994,6 +15038,12 @@ MonoBehaviour:
       \u03B9\u03C3\u03C7\u03C5\u03C1\u03CC\u03C2"
     - "\u039D\u03B1\u03B9 \u03B1\u03BD \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9
       \u03C3\u03B7\u03BC\u03B1\u03BD\u03C4\u03B9\u03BA\u03AD\u03C2 \u03BF\u03B9 \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2"
+    Feedback: "\u039A\u03B1\u03BB\u03CC \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BD\u03B1
+      \u03BC\u03B7\u03BD \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
+      \u03C4\u03BF\u03BD \u03AF\u03B4\u03B9\u03BF \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC
+      \u03C3\u03B5 \u03B4\u03B9\u03B1\u03C6\u03BF\u03C1\u03B5\u03C4\u03B9\u03BA\u03AD\u03C2
+      \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2 \u03B3\u03B9\u03B1 \u03BB\u03CC\u03B3\u03BF\u03C5\u03C2
+      \u03B1\u03C3\u03C6\u03B1\u03BB\u03B5\u03AF\u03B1\u03C2."
     CorrectAnswer: 2
   - Question: "\u03A0\u03BF\u03B9\u03BF\u03C2 \u03B8\u03B5\u03C9\u03C1\u03B5\u03AF\u03C4\u03B1\u03B9
       \u03BF \u03C3\u03B7\u03BC\u03B1\u03BD\u03C4\u03B9\u03BA\u03CC\u03C4\u03B5\u03C1\u03BF\u03C2
@@ -15004,6 +15054,16 @@ MonoBehaviour:
     - "\u03A4\u03BF instagram"
     - "\u03A4\u03BF email"
     - "\u03A4\u03BF tik-tok"
+    Feedback: "\u039F \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2
+      email \u03B5\u03AF\u03BD\u03B1\u03B9 \u03AF\u03C3\u03C9\u03C2 \u03BF \u03B2\u03B1\u03C3\u03B9\u03BA\u03CC\u03C4\u03B5\u03C1\u03BF\u03C2
+      \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2 \u03B3\u03B9\u03B1\u03C4\u03AF
+      \u03C3\u03C5\u03C7\u03BD\u03AC \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C3\u03C5\u03BD\u03B4\u03B5\u03B4\u03B5\u03BC\u03AD\u03BD\u03BF\u03C2
+      \u03BC\u03B5 \u03CC\u03BB\u03BF\u03C5\u03C2 \u03C4\u03BF\u03C5\u03C2 \u03AC\u03BB\u03BB\u03BF\u03C5\u03C2
+      \u03BA\u03B1\u03B9 \u03BC\u03AD\u03C3\u03C9 \u03B1\u03C5\u03C4\u03BF\u03CD
+      \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF \u03BA\u03B1\u03BD\u03B5\u03AF\u03C2 \u03B5\u03CD\u03BA\u03BF\u03BB\u03B1
+      \u03BD\u03B1 \u03B1\u03BB\u03BB\u03AC\u03BE\u03B5\u03B9 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC
+      \u03C3\u03B5 \u03BA\u03AC\u03C0\u03BF\u03B9\u03B1 \u03AC\u03BB\u03BB\u03B7
+      \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE."
     CorrectAnswer: 3
   - Question: "\u03A0\u03C9\u03C2 \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF \u03BA\u03B1\u03BD\u03B5\u03AF\u03C2
       \u03BD\u03B1 \u03B1\u03C3\u03C6\u03B1\u03BB\u03AF\u03C3\u03B5\u03B9 \u03C4\u03BF\u03C5\u03C2
@@ -15025,6 +15085,19 @@ MonoBehaviour:
     - "\u0393\u03C1\u03AC\u03C6\u03BF\u03BD\u03C4\u03B1\u03C2 \u03C4\u03BF\u03C5\u03C2
       \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2 \u03C4\u03BF\u03C5 \u03C3\u03B5
       \u03AD\u03BD\u03B1 \u03C4\u03B5\u03C4\u03C1\u03AC\u03B4\u03B9\u03BF"
+    Feedback: "\u0397 \u03C4\u03B1\u03C5\u03C4\u03BF\u03C0\u03BF\u03AF\u03B7\u03C3\u03B7
+      \u03B4\u03CD\u03BF \u03C0\u03B1\u03C1\u03B1\u03B3\u03CC\u03BD\u03C4\u03C9\u03BD
+      \u03B5\u03AF\u03BD\u03B1\u03B9 \u03AD\u03BD\u03B1 \u03B5\u03C1\u03B3\u03B1\u03BB\u03B5\u03AF\u03BF
+      \u03C0\u03BF\u03C5 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03B5\u03AF\u03C4\u03B1\u03B9
+      \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03B5\u03BE\u03B1\u03C3\u03C6\u03B1\u03BB\u03AF\u03C3\u03B5\u03B9
+      \u03CC\u03C4\u03B9 \u03AD\u03BD\u03B1\u03C2 \u03C7\u03C1\u03AE\u03C3\u03C4\u03B7\u03C2
+      \u03C0\u03BF\u03C5 \u03C0\u03C1\u03BF\u03C3\u03C0\u03B1\u03B8\u03B5\u03AF \u03BD\u03B1
+      \u03C3\u03C5\u03BD\u03B4\u03B5\u03B8\u03B5\u03AF \u03C3\u03B5 \u03BC\u03AF\u03B1
+      \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE \u03B5\u03AF\u03BD\u03B1\u03B9
+      \u03CC\u03BD\u03C4\u03C9\u03C2 \u03B1\u03C5\u03C4\u03CC\u03C2 \u03BA\u03B1\u03B9
+      \u03CC\u03C7\u03B9 \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF\u03C2 \u03BA\u03B1\u03BA\u03CC\u03B2\u03BF\u03C5\u03BB\u03BF\u03C2
+      \u03C0\u03BF\u03C5 \u03AD\u03C7\u03B5\u03B9 \u03C5\u03C0\u03BF\u03BA\u03BB\u03AD\u03C8\u03B5\u03B9
+      \u03C4\u03B1 \u03C3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1 \u03C4\u03BF\u03C5."
     CorrectAnswer: 1
   - Question: "\u03A4\u03B9 \u0394\u0395\u039D \u03B8\u03B5\u03C9\u03C1\u03B5\u03AF\u03C4\u03B1\u03B9
       \u03C8\u03B7\u03C6\u03B9\u03B1\u03BA\u03CC \u03BC\u03AD\u03C3\u03BF \u03C0\u03C1\u03BF\u03C3\u03C4\u03B1\u03C3\u03AF\u03B1\u03C2;"
@@ -15035,6 +15108,12 @@ MonoBehaviour:
       \u03C3\u03C0\u03AF\u03C4\u03B9"
     - "\u0397 \u03BB\u03B5\u03B9\u03C4\u03BF\u03C5\u03C1\u03B3\u03AF\u03B1 \u03B1\u03BD\u03B1\u03B3\u03BD\u03CE\u03C1\u03B9\u03C3\u03B7\u03C2
       \u03C0\u03C1\u03BF\u03C3\u03CE\u03C0\u03BF\u03C5"
+    Feedback: "\u0397 \u03BA\u03BB\u03B5\u03B9\u03B4\u03B1\u03C1\u03AF\u03B1 \u03C3\u03C4\u03BF
+      \u03C3\u03C0\u03AF\u03C4\u03B9 \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9
+      \u03C8\u03B7\u03C6\u03B9\u03B1\u03BA\u03CC \u03BC\u03AD\u03C3\u03BF \u03C0\u03C1\u03BF\u03C3\u03C4\u03B1\u03C3\u03AF\u03B1\u03C2
+      \u03BA\u03B1\u03B8\u03CC\u03C4\u03B9 \u03B4\u03B5\u03BD \u03B1\u03C6\u03BF\u03C1\u03AC
+      \u03BA\u03AC\u03C0\u03BF\u03B9\u03B1 \u03C8\u03B7\u03C6\u03B9\u03B1\u03BA\u03AE
+      \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE \u03AE \u03C3\u03C5\u03C3\u03BA\u03B5\u03C5\u03AE."
     CorrectAnswer: 3
   - Question: "\u03A4\u03B9 \u0394\u0395\u039D \u03B8\u03B5\u03C9\u03C1\u03B5\u03AF\u03C4\u03B1\u03B9
       \u03C6\u03C5\u03C3\u03B9\u03BA\u03CC \u03BC\u03AD\u03C3\u03BF \u03C0\u03C1\u03BF\u03C3\u03C4\u03B1\u03C3\u03AF\u03B1\u03C2;"
@@ -15044,6 +15123,12 @@ MonoBehaviour:
     - "\u0397 \u03BA\u03BB\u03B5\u03B9\u03B4\u03B1\u03C1\u03B9\u03AC \u03C3\u03B5
       \u03AD\u03BD\u03B1 \u03C3\u03C5\u03C1\u03C4\u03AC\u03C1\u03B9"
     - "\u03A4\u03BF \u03B4\u03B1\u03C7\u03C4\u03C5\u03BB\u03B9\u03BA\u03CC \u03B1\u03C0\u03BF\u03C4\u03CD\u03C0\u03C9\u03BC\u03B1"
+    Feedback: "\u039F \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2 \u03C4\u03BF\u03C5
+      email \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C6\u03C5\u03C3\u03B9\u03BA\u03CC
+      \u03BC\u03AD\u03C3\u03BF \u03C0\u03C1\u03BF\u03C3\u03C4\u03B1\u03C3\u03AF\u03B1\u03C2
+      \u03BA\u03B1\u03B8\u03CE\u03C2 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03B5\u03AF\u03C4\u03B1\u03B9
+      \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03B1\u03C3\u03C6\u03B1\u03BB\u03AF\u03C3\u03BF\u03C5\u03BC\u03B5
+      \u03BC\u03AF\u03B1 \u03C8\u03B7\u03C6\u03B9\u03B1\u03BA\u03AE \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE."
     CorrectAnswer: 1
   - Question: "\u03A0\u03BF\u03B9\u03BF\u03C2 \u03B1\u03C0\u03CC \u03C4\u03BF\u03C5\u03C2
       \u03C0\u03B1\u03C1\u03B1\u03BA\u03AC\u03C4\u03C9 \u03B5\u03AF\u03BD\u03B1\u03B9
@@ -15055,6 +15140,13 @@ MonoBehaviour:
     - dgYfh34@45g
     - kalimerasas
     - abcd
+    Feedback: "\u039F \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2 abcd \u03B5\u03AF\u03BD\u03B1\u03B9
+      \u03BF \u03BB\u03B9\u03B3\u03CC\u03C4\u03B5\u03C1\u03BF \u03B9\u03C3\u03C7\u03C5\u03C1\u03CC\u03C2
+      \u03BA\u03B1\u03B8\u03CE\u03C2 \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BC\u03B9\u03BA\u03C1\u03CC\u03C2
+      \u03C3\u03B5 \u03BC\u03AD\u03B3\u03B5\u03B8\u03BF\u03C2 \u03BA\u03B1\u03B9
+      \u03B1\u03C0\u03BF\u03C4\u03B5\u03BB\u03B5\u03AF\u03C4\u03B1\u03B9 \u03B1\u03C0\u03CC
+      \u03C0\u03B5\u03B6\u03BF\u03CD\u03C2 \u03B4\u03B9\u03B1\u03B4\u03BF\u03C7\u03B9\u03BA\u03BF\u03CD\u03C2
+      \u03BB\u03B1\u03C4\u03B9\u03BD\u03B9\u03BA\u03BF\u03CD\u03C2 \u03C7\u03B1\u03C1\u03B1\u03BA\u03C4\u03AE\u03C1\u03B5\u03C2."
     CorrectAnswer: 4
   - Question: "\u03A4\u03B9 \u03BA\u03AC\u03BD\u03BF\u03C5\u03BC\u03B5 \u03CC\u03C4\u03B1\u03BD
       \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
@@ -15075,6 +15167,13 @@ MonoBehaviour:
     - "\u0391\u03C0\u03BF\u03B8\u03B7\u03BA\u03B5\u03CD\u03BF\u03C5\u03BC\u03B5 \u03C4\u03BF\u03BD
       \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC \u03C3\u03C4\u03BF\u03BD \u03C6\u03C5\u03BB\u03BB\u03BF\u03BC\u03B5\u03C4\u03C1\u03B7\u03C4\u03AE
       \u03BC\u03B1\u03C2"
+    Feedback: "\u03A4\u03B1 \u03BB\u03BF\u03B3\u03B9\u03C3\u03BC\u03B9\u03BA\u03AC
+      \u03B4\u03B9\u03B1\u03C7\u03B5\u03AF\u03C1\u03B9\u03C3\u03B7\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CE\u03BD
+      \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2 \u03BC\u03B1\u03C2 \u03B4\u03B9\u03B5\u03C5\u03BA\u03BF\u03BB\u03CD\u03BD\u03BF\u03C5\u03BD
+      \u03C3\u03C4\u03BF \u03BD\u03B1 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
+      \u03C0\u03BF\u03BB\u03CD\u03C0\u03BB\u03BF\u03BA\u03BF\u03C5\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2
+      \u03C0\u03BF\u03C5 \u03B4\u03B5\u03BD \u03BC\u03C0\u03BF\u03C1\u03BF\u03CD\u03BC\u03B5
+      \u03BD\u03B1 \u03B8\u03C5\u03BC\u03CC\u03BC\u03B1\u03C3\u03C4\u03B5."
     CorrectAnswer: 3
   - Question: "\u03A4\u03B9 \u03BA\u03AC\u03BD\u03BF\u03C5\u03BC\u03B5 \u03CC\u03C4\u03B1\u03BD
       \u03B4\u03B5\u03BD \u03BC\u03C0\u03BF\u03C1\u03BF\u03CD\u03BC\u03B5 \u03BD\u03B1
@@ -15096,6 +15195,15 @@ MonoBehaviour:
       \u03C4\u03BF\u03BD \u03AF\u03B4\u03B9\u03BF \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC
       \u03C0\u03BF\u03C5 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
       \u03BA\u03B1\u03B9 \u03C3\u03B5 \u03AC\u03BB\u03BB\u03B5\u03C2 \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AD\u03C2"
+    Feedback: "\u0397 \u03B3\u03B5\u03BD\u03BD\u03AE\u03C4\u03C1\u03B9\u03B1 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CE\u03BD
+      \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2 \u03B5\u03AF\u03BD\u03B1\u03B9
+      \u03BA\u03B1\u03C4\u03AC\u03BB\u03BB\u03B7\u03BB\u03B1 \u03C3\u03C7\u03B5\u03B4\u03B9\u03B1\u03C3\u03BC\u03AD\u03BD\u03B7
+      \u03CE\u03C3\u03C4\u03B5 \u03BD\u03B1 \u03C0\u03B1\u03C1\u03AC\u03B3\u03B5\u03B9
+      \u03C0\u03BF\u03BB\u03CD\u03C0\u03BB\u03BF\u03BA\u03BF\u03C5\u03C2 \u03BA\u03B1\u03B9
+      \u03B1\u03C3\u03C6\u03B1\u03BB\u03B5\u03AF\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2
+      \u03C0\u03BF\u03C5 \u03B4\u03B5\u03BD \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF
+      \u03BA\u03B1\u03BD\u03B5\u03AF\u03C2 \u03B5\u03CD\u03BA\u03BF\u03BB\u03B1 \u03BD\u03B1
+      \u03BC\u03B1\u03BD\u03C4\u03AD\u03C8\u03B5\u03B9."
     CorrectAnswer: 2
   - Question: "\u03A3\u03B5 \u03C0\u03B5\u03C1\u03AF\u03C0\u03C4\u03C9\u03C3\u03B7
       \u03C0\u03BF\u03C5 \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF\u03C2 \u03B2\u03C1\u03B5\u03B9
@@ -15116,6 +15224,14 @@ MonoBehaviour:
     - "\u03A4\u03BF\u03C5 \u03B6\u03B7\u03C4\u03AC\u03C9 \u03B5\u03C5\u03B3\u03B5\u03BD\u03B9\u03BA\u03AC
       \u03BD\u03B1 \u03BC\u03B7\u03BD \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03AE\u03C3\u03B5\u03B9
       \u03C4\u03BF\u03BD \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC \u03BC\u03BF\u03C5"
+    Feedback: "\u0391\u03BD \u03B1\u03BD\u03C4\u03B9\u03BB\u03B7\u03C6\u03B8\u03BF\u03CD\u03BC\u03B5
+      \u03CC\u03C4\u03B9 \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF\u03C2 \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2
+      \u03BC\u03B1\u03C2 \u03AD\u03C7\u03B5\u03B9 \u03C0\u03B1\u03C1\u03B1\u03B2\u03B9\u03B1\u03C3\u03C4\u03B5\u03AF
+      \u03B1\u03BB\u03BB\u03AC\u03B6\u03BF\u03C5\u03BC\u03B5 \u03B1\u03BC\u03AD\u03C3\u03C9\u03C2
+      \u03C4\u03BF\u03BD \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC \u03C4\u03BF\u03C5
+      \u03C0\u03C1\u03BF\u03BA\u03B5\u03B9\u03BC\u03AD\u03BD\u03BF\u03C5 \u03BD\u03B1
+      \u03C0\u03C1\u03BF\u03C3\u03C4\u03B1\u03C4\u03AD\u03C8\u03BF\u03C5\u03BC\u03B5
+      \u03B5\u03BA\u03B5\u03AF\u03BD\u03BF\u03BD \u03C4\u03BF\u03BD \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC."
     CorrectAnswer: 1
   options:
   - {fileID: 2123988680}
@@ -15212,6 +15328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 520284649}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 876615523}
   textLabel: {fileID: 1686412186}
   testDialogue: {fileID: 11400000, guid: cc54e97120482ac4899ad54ae45b7eaa, type: 2}
@@ -16725,7 +16843,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a5db6fa9a5dff154abed10936296ed42, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -19715,6 +19833,16 @@ MonoBehaviour:
     - "\u0393\u03B9\u03B1\u03C4\u03AF \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF \u03BD\u03B1
       \u03C5\u03C0\u03AC\u03C1\u03C7\u03BF\u03C5\u03BD \u03B5\u03C5\u03B1\u03AF\u03C3\u03B8\u03B7\u03C4\u03B5\u03C2
       \u03C0\u03C1\u03BF\u03C3\u03C9\u03C0\u03B9\u03BA\u03AD\u03C2 \u03C0\u03BB\u03B7\u03C1\u03BF\u03C6\u03BF\u03C1\u03AF\u03B5\u03C2"
+    Feedback: "\u039F \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2
+      email \u03B5\u03AF\u03BD\u03B1\u03B9 \u03AF\u03C3\u03C9\u03C2 \u03BF \u03B2\u03B1\u03C3\u03B9\u03BA\u03CC\u03C4\u03B5\u03C1\u03BF\u03C2
+      \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC\u03C2 \u03B3\u03B9\u03B1\u03C4\u03AF
+      \u03C3\u03C5\u03C7\u03BD\u03AC \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C3\u03C5\u03BD\u03B4\u03B5\u03B4\u03B5\u03BC\u03AD\u03BD\u03BF\u03C2
+      \u03BC\u03B5 \u03CC\u03BB\u03BF\u03C5\u03C2 \u03C4\u03BF\u03C5\u03C2 \u03AC\u03BB\u03BB\u03BF\u03C5\u03C2
+      \u03BA\u03B1\u03B9 \u03BC\u03AD\u03C3\u03C9 \u03B1\u03C5\u03C4\u03BF\u03CD
+      \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF \u03BA\u03B1\u03BD\u03B5\u03AF\u03C2 \u03B5\u03CD\u03BA\u03BF\u03BB\u03B1
+      \u03BD\u03B1 \u03B1\u03BB\u03BB\u03AC\u03BE\u03B5\u03B9 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC
+      \u03C3\u03B5 \u03BA\u03AC\u03C0\u03BF\u03B9\u03B1 \u03AC\u03BB\u03BB\u03B7
+      \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE."
     CorrectAnswer: 3
   - Question: "\u039F\u03B9 \u03B4\u03CD\u03C3\u03BA\u03BF\u03BB\u03BF\u03B9 \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03AF
       \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2 \u03B5\u03AF\u03BD\u03B1\u03B9
@@ -19734,6 +19862,12 @@ MonoBehaviour:
       \u03BA\u03C9\u03B4\u03B9\u03BA\u03CE\u03BD \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2
       \u03BC\u03B5 \u03BA\u03C1\u03C5\u03C0\u03C4\u03BF\u03B3\u03C1\u03AC\u03C6\u03B7\u03C3\u03B7"
     - "\u038C\u03BB\u03B1 \u03C4\u03B1 \u03C0\u03B1\u03C1\u03B1\u03C0\u03AC\u03BD\u03C9"
+    Feedback: "\u0395\u03AF\u03BD\u03B1\u03B9 \u03BA\u03B1\u03BB\u03CC \u03BD\u03B1
+      \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
+      \u03CC\u03C3\u03BF \u03C4\u03BF \u03B4\u03C5\u03BD\u03B1\u03C4\u03CC\u03BD
+      \u03C0\u03B5\u03C1\u03B9\u03C3\u03C3\u03CC\u03C4\u03B5\u03C1\u03B5\u03C2 \u03C4\u03B5\u03C7\u03BD\u03B9\u03BA\u03AD\u03C2
+      \u03C0\u03C1\u03BF\u03BA\u03B5\u03B9\u03BC\u03AD\u03BD\u03BF\u03C5 \u03BD\u03B1
+      \u03B5\u03AF\u03BC\u03B1\u03C3\u03C4\u03B5 \u03C0\u03B9\u03BF \u03B1\u03C3\u03C6\u03B1\u03BB\u03B5\u03AF\u03C2."
     CorrectAnswer: 4
   - Question: "\u03A4\u03B9 \u03BC\u03C0\u03BF\u03C1\u03BF\u03CD\u03BC\u03B5 \u03BD\u03B1
       \u03BA\u03AC\u03BD\u03BF\u03C5\u03BC\u03B5 \u03B3\u03B9\u03B1 \u03BD\u03B1
@@ -19758,6 +19892,19 @@ MonoBehaviour:
       \u03C3\u03C4\u03BF\u03BD \u03C6\u03C5\u03BB\u03BB\u03BF\u03BC\u03B5\u03C4\u03C1\u03B7\u03C4\u03AE
       (browser) \u03B3\u03B9\u03B1 \u03B5\u03C5\u03BA\u03BF\u03BB\u03AF\u03B1"
     - "\u039A\u03B1\u03BD\u03AD\u03BD\u03B1 \u03B1\u03C0\u03CC \u03C4\u03B1 \u03C0\u03B1\u03C1\u03B1\u03C0\u03AC\u03BD\u03C9"
+    Feedback: "\u0397 \u03C4\u03B1\u03C5\u03C4\u03BF\u03C0\u03BF\u03AF\u03B7\u03C3\u03B7
+      \u03B4\u03CD\u03BF \u03C0\u03B1\u03C1\u03B1\u03B3\u03CC\u03BD\u03C4\u03C9\u03BD
+      \u03B5\u03AF\u03BD\u03B1\u03B9 \u03AD\u03BD\u03B1 \u03B5\u03C1\u03B3\u03B1\u03BB\u03B5\u03AF\u03BF
+      \u03C0\u03BF\u03C5 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03B5\u03AF\u03C4\u03B1\u03B9
+      \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03B5\u03BE\u03B1\u03C3\u03C6\u03B1\u03BB\u03AF\u03C3\u03B5\u03B9
+      \u03CC\u03C4\u03B9 \u03AD\u03BD\u03B1\u03C2 \u03C7\u03C1\u03AE\u03C3\u03C4\u03B7\u03C2
+      \u03C0\u03BF\u03C5 \u03C0\u03C1\u03BF\u03C3\u03C0\u03B1\u03B8\u03B5\u03AF \u03BD\u03B1
+      \u03C3\u03C5\u03BD\u03B4\u03B5\u03B8\u03B5\u03AF \u03C3\u03B5 \u03BC\u03AF\u03B1
+      \u03B5\u03C6\u03B1\u03C1\u03BC\u03BF\u03B3\u03AE \u03B5\u03AF\u03BD\u03B1\u03B9
+      \u03CC\u03BD\u03C4\u03C9\u03C2 \u03B1\u03C5\u03C4\u03CC\u03C2 \u03BA\u03B1\u03B9
+      \u03CC\u03C7\u03B9 \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF\u03C2 \u03BA\u03B1\u03BA\u03CC\u03B2\u03BF\u03C5\u03BB\u03BF\u03C2
+      \u03C0\u03BF\u03C5 \u03AD\u03C7\u03B5\u03B9 \u03C5\u03C0\u03BF\u03BA\u03BB\u03AD\u03C8\u03B5\u03B9
+      \u03C4\u03B1 \u03C3\u03C4\u03BF\u03B9\u03C7\u03B5\u03AF\u03B1 \u03C4\u03BF\u03C5."
     CorrectAnswer: 2
   options:
   - {fileID: 1393922344}
@@ -20158,7 +20305,7 @@ RectTransform:
   m_GameObject: {fileID: 536561617}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0088, y: 1.0088, z: 1.0088}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1018419174}
@@ -20189,7 +20336,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u038C\u03C7\u03B9\n"
+  m_text: "\u038C\u03C7\u03B9, \u03B4\u03B5\u03BD \u03B8\u03B1 \u03AE\u03B8\u03B5\u03BB\u03B1
+    \u03BD\u03B1 \u03B1\u03BD\u03B1\u03C6\u03AD\u03C1\u03C9 \u03C4\u03BF \u03C0\u03B5\u03C1\u03B9\u03C3\u03C4\u03B1\u03C4\u03B9\u03BA\u03CC
+    \u03C3\u03C4\u03B7\u03BD \u03B4\u03AF\u03C9\u03BE\u03B7 \u03B7\u03BB\u03B5\u03BA\u03C4\u03C1\u03BF\u03BD\u03B9\u03BA\u03BF\u03CD
+    \u03B5\u03B3\u03BA\u03BB\u03AE\u03BC\u03B1\u03C4\u03BF\u03C2."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 959f9858c764752469ba5f175ec27345, type: 2}
   m_sharedMaterial: {fileID: -3255597144125338330, guid: 959f9858c764752469ba5f175ec27345, type: 2}
@@ -20216,8 +20366,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 8
+  m_fontSizeBase: 8
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -23821,8 +23971,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641510904}
   m_TextComponent: {fileID: 2231180}
   m_Placeholder: {fileID: 148500725}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 0
+  m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -24768,7 +24918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41, y: -177}
+  m_AnchoredPosition: {x: -245, y: -167}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &680715406
@@ -26792,7 +26942,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 43ccbdef669dd844ea1bdd7aee1d6e8f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -27379,6 +27529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 98625754}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 196479093}
   textLabel: {fileID: 893073791}
   testDialogue: {fileID: 11400000, guid: d3156996545bbf54f93829ff40bb4f31, type: 2}
@@ -27448,6 +27600,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 0}
   textLabel: {fileID: 0}
   testDialogue: {fileID: 0}
@@ -31938,6 +32092,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 0}
   textLabel: {fileID: 0}
   testDialogue: {fileID: 0}
@@ -33209,8 +33365,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 903208874}
   m_TextComponent: {fileID: 1781464851}
   m_Placeholder: {fileID: 1278022857}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 0
+  m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -35936,7 +36092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1018419174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35946,7 +36102,7 @@ RectTransform:
   m_GameObject: {fileID: 1018419173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5111566, y: 1.9685721, z: 1.0935296}
+  m_LocalScale: {x: 1.9631172, y: 2.5573378, z: 1.4205854}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 536561618}
@@ -35955,7 +36111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -553, y: 251}
+  m_AnchoredPosition: {x: -461.1, y: 269.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1018419175
@@ -36378,7 +36534,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2bf18333c3e40314b8ea559048d5daf5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -36556,7 +36712,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1037506534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36566,7 +36722,7 @@ RectTransform:
   m_GameObject: {fileID: 1037506533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5840999, y: 2.0733168, z: 1.168}
+  m_LocalScale: {x: 1.9481261, y: 2.5497649, z: 1.4364064}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 289394285}
@@ -36575,7 +36731,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -819, y: 251}
+  m_AnchoredPosition: {x: -791.2, y: 270.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037506535
@@ -36889,6 +37045,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1154182749}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 155082821}
   textLabel: {fileID: 412789373}
   testDialogue: {fileID: 11400000, guid: 5435fa75f37a2e9439cb0d3557841d20, type: 2}
@@ -37753,6 +37911,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1421629485}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 1656882375}
   textLabel: {fileID: 2019718630}
   testDialogue: {fileID: 11400000, guid: a5889223c58afa846baf2328a1c14fa2, type: 2}
@@ -40837,6 +40997,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 0}
   textLabel: {fileID: 0}
   testDialogue: {fileID: 0}
@@ -41397,6 +41559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 424096619}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 1597004640}
   textLabel: {fileID: 440989534}
   testDialogue: {fileID: 11400000, guid: df9effdf9236cfd4799942d371138645, type: 2}
@@ -43269,8 +43433,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1220043071}
   m_TextComponent: {fileID: 195265786}
   m_Placeholder: {fileID: 720227774}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 0
+  m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -48311,6 +48475,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1222193383}
+        m_TargetAssemblyTypeName: HelpManager, Assembly-CSharp
+        m_MethodName: DeActivate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1356288765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49019,6 +49195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1133210560}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 755713006}
   textLabel: {fileID: 1093003755}
   testDialogue: {fileID: 11400000, guid: 317981e1035099847ba92dfe00e2df81, type: 2}
@@ -49182,6 +49360,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1436429177}
         m_TargetAssemblyTypeName: SaveEmail, Assembly-CSharp
         m_MethodName: CheckPasswordBank
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 425983635}
+        m_TargetAssemblyTypeName: HelpManager, Assembly-CSharp
+        m_MethodName: DeActivate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -51712,6 +51902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1575546881}
+  button2: {fileID: 1037506533}
+  button3: {fileID: 1018419173}
   dialogueBox: {fileID: 1928473344}
   textLabel: {fileID: 2026305828}
   testDialogue: {fileID: 11400000, guid: 69b56e286f28ecd4591f9847378293cd, type: 2}
@@ -52008,6 +52200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 0}
   textLabel: {fileID: 0}
   testDialogue: {fileID: 0}
@@ -55318,6 +55512,14 @@ MonoBehaviour:
       \u03BE\u03AD\u03BD\u03B7 \u03B3\u03BB\u03CE\u03C3\u03C3\u03B1"
     - "\u03A3\u03B5 \u03BA\u03B1\u03BC\u03AF\u03B1 \u03C0\u03B5\u03C1\u03AF\u03C0\u03C4\u03C9\u03C3\u03B7
       \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B1\u03C3\u03C6\u03B1\u03BB\u03B5\u03AF\u03C2"
+    Feedback: "\u039A\u03B1\u03BB\u03CC \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BD\u03B1
+      \u03BC\u03B7\u03BD \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
+      \u03C3\u03B5 \u03BA\u03B1\u03BC\u03AF\u03B1 \u03C0\u03B5\u03C1\u03AF\u03C0\u03C4\u03C9\u03C3\u03B7
+      \u03C3\u03C5\u03BD\u03B7\u03B8\u03B9\u03C3\u03BC\u03AD\u03BD\u03B5\u03C2 \u03BB\u03AD\u03BE\u03B5\u03B9\u03C2
+      \u03BA\u03B1\u03B9 \u03C6\u03C1\u03AC\u03C3\u03B5\u03B9\u03C2 \u03BA\u03B1\u03B8\u03CE\u03C2
+      \u03B5\u03AF\u03BD\u03B1\u03B9 \u03B5\u03CD\u03BA\u03BF\u03BB\u03BF \u03B3\u03B9\u03B1
+      \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF\u03BD \u03BD\u03B1 \u03C4\u03B9\u03C2
+      \u03BC\u03B1\u03BD\u03C4\u03AD\u03C8\u03B5\u03B9."
     CorrectAnswer: 4
   - Question: "\u03A3\u03B5 \u03C0\u03B5\u03C1\u03AF\u03C0\u03C4\u03C9\u03C3\u03B7
       \u03C0\u03BF\u03C5 \u03B4\u03B5\u03BD \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF\u03C2
@@ -55338,6 +55540,13 @@ MonoBehaviour:
     - "\u039D\u03B1 \u03C1\u03C9\u03C4\u03AE\u03C3\u03B5\u03B9\u03C2 \u03AD\u03BD\u03B1\u03BD
       \u03AC\u03B3\u03BD\u03C9\u03C3\u03C4\u03BF \u03C0\u03CC\u03C4\u03B5 \u03B5\u03AF\u03BD\u03B1\u03B9
       \u03C4\u03B1 \u03B3\u03B5\u03BD\u03AD\u03B8\u03BB\u03B9\u03B1 \u03C4\u03BF\u03C5"
+    Feedback: "\u0395\u03AF\u03BD\u03B1\u03B9 \u03BA\u03B1\u03BB\u03CC \u03BD\u03B1
+      \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03BF\u03CD\u03BC\u03B5
+      \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2 \u03C0\u03BF\u03C5 \u03C0\u03B1\u03C1\u03AC\u03B3\u03BF\u03BD\u03C4\u03B1\u03B9
+      \u03BC\u03B5 \u03C4\u03C5\u03C7\u03B1\u03AF\u03BF \u03C4\u03C1\u03CC\u03C0\u03BF
+      \u03CC\u03C4\u03B1\u03BD \u03B4\u03B5\u03BD \u03BC\u03C0\u03BF\u03C1\u03BF\u03CD\u03BC\u03B5
+      \u03BD\u03B1 \u03C3\u03BA\u03B5\u03C6\u03C4\u03BF\u03CD\u03BC\u03B5 \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF\u03BD
+      \u03B1\u03C0\u03CC \u03BC\u03CC\u03BD\u03BF\u03B9 \u03BC\u03B1\u03C2."
     CorrectAnswer: 1
   - Question: "\u039C\u03C0\u03BF\u03C1\u03B5\u03AF\u03C2 \u03BD\u03B1 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03AE\u03C3\u03B5\u03B9\u03C2
       \u03C4\u03BF\u03BD \u03AF\u03B4\u03B9\u03BF \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC
@@ -55353,6 +55562,17 @@ MonoBehaviour:
       \u03C4\u03BF\u03BD \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03AE\u03C3\u03B5\u03B9\u03C2
       \u03C3\u03B5 \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03BF\u03CD\u03C2
       \u03C0\u03BF\u03C5 \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C3\u03B7\u03BC\u03B1\u03BD\u03C4\u03B9\u03BA\u03BF\u03AF"
+    Feedback: "\u0388\u03BD\u03B1\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2
+      \u03B4\u03B5\u03BD \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9 \u03C0\u03BF\u03C4\u03AD
+      \u03BD\u03B1 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03B5\u03AF\u03C4\u03B5
+      \u03C3\u03B5 \u03C0\u03B1\u03C1\u03B1\u03C0\u03AC\u03BD\u03C9 \u03B1\u03C0\u03CC
+      \u03AD\u03BD\u03B1\u03BD \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03BF\u03CD\u03C2
+      \u03BA\u03B1\u03B8\u03CE\u03C2 \u03B1\u03BD \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF\u03C2
+      \u03B1\u03BD\u03B1\u03BA\u03B1\u03BB\u03CD\u03C8\u03B5\u03B9 \u03C4\u03BF\u03BD
+      \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC \u03BC\u03B1\u03C2 \u03B8\u03B1 \u03BC\u03C0\u03BF\u03C1\u03B5\u03AF
+      \u03BD\u03B1 \u03C4\u03BF\u03BD \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03AE\u03C3\u03B5\u03B9
+      \u03C3\u03B5 \u03C0\u03B1\u03C1\u03B1\u03C0\u03AC\u03BD\u03C9 \u03B1\u03C0\u03CC
+      \u03AD\u03BD\u03B1 \u03C3\u03B7\u03BC\u03B5\u03AF\u03B1"
     CorrectAnswer: 2
   options:
   - {fileID: 54099897}
@@ -56474,7 +56694,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b853c68eb491bf344beb019ae42eba3d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -57087,6 +57307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 424096619}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 1597004640}
   textLabel: {fileID: 440989534}
   testDialogue: {fileID: 11400000, guid: df9effdf9236cfd4799942d371138645, type: 2}
@@ -57320,13 +57542,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1600241503}
   m_TextComponent: {fileID: 157318411}
   m_Placeholder: {fileID: 602532141}
-  m_ContentType: 4
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 1
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 3
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
@@ -58261,6 +58483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1228341737}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 1625607803}
   textLabel: {fileID: 1828427791}
   testDialogue: {fileID: 11400000, guid: b0b0ccf4b1e53164b89130ace15ceea6, type: 2}
@@ -58972,7 +59196,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 90ec348ce77f916489e775cbf40ca4d0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -59727,6 +59951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 0}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 0}
   textLabel: {fileID: 0}
   testDialogue: {fileID: 0}
@@ -61872,8 +62098,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1733068964}
   m_TextComponent: {fileID: 883573133}
   m_Placeholder: {fileID: 2044365139}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 0
+  m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -63429,7 +63655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1800467567
 Transform:
   m_ObjectHideFlags: 0
@@ -65766,16 +65992,16 @@ MonoBehaviour:
     \u03C3\u03BF\u03C5. \u0391\u03C5\u03C4\u03AE \u03C4\u03B7 \u03C3\u03C4\u03B9\u03B3\u03BC\u03AE
     \u03C0\u03BF\u03C5 \u03BC\u03B9\u03BB\u03AC\u03BC\u03B5 \u03B5\u03C0\u03B9\u03C4\u03AF\u03B8\u03BF\u03BC\u03B1\u03B9
     \u03C3\u03C4\u03BF\u03BD \u03BB\u03BF\u03B3\u03B1\u03C1i\u03B1\u03C3\u03BC\u03CC
-    \u03C3\u03B1\u03C2 \u03C3\u03C4\u03B1 \u03BA\u03BF\u03B9\u03BD\u03C9\u03BD\u03B9\u03BA\u03AC
+    \u03C3\u03BF\u03C5 \u03C3\u03C4\u03B1 \u03BA\u03BF\u03B9\u03BD\u03C9\u03BD\u03B9\u03BA\u03AC
     \u03B4\u03AF\u03BA\u03C4\u03C5\u03B1 \u03BC\u03B5 \u03C3\u03BA\u03BF\u03C0\u03CC
     \u03BD\u03B1 \u03B4\u03B7\u03BC\u03BF\u03C3\u03B9\u03B5\u03CD\u03C3\u03C9 \u03BC\u03AF\u03B1
     \u03B1\u03BD\u03AC\u03C1\u03C4\u03B7\u03C3\u03B7 \u03C0\u03C1\u03BF\u03C3\u03C9\u03C0\u03B9\u03BA\u03BF\u03CD
-    \u03C0\u03B5\u03C1\u03B9\u03B5\u03C7\u03BF\u03BC\u03AD\u03BD\u03BF\u03C5. \u03A0\u03C1\u03BF\u03C3\u03C0\u03B1\u03B8\u03AE\u03C3\u03C4\u03B5
-    \u03BD\u03B1 \u03B1\u03BC\u03C5\u03BD\u03B8\u03B5\u03AF\u03C4\u03B5. \u0388\u03C7\u03B5\u03C4\u03B5
+    \u03C0\u03B5\u03C1\u03B9\u03B5\u03C7\u03BF\u03BC\u03AD\u03BD\u03BF\u03C5. \u03A0\u03C1\u03BF\u03C3\u03C0\u03AC\u03B8\u03B7\u03C3\u03B5
+    \u03BD\u03B1 \u03B1\u03BC\u03C5\u03BD\u03B8\u03B5\u03AF\u03C2. \u0388\u03C7\u03B5\u03B9\u03C2
     \u03C4\u03B9\u03C2 \u03B5\u03BE\u03AE\u03C2 \u03B5\u03C0\u03B9\u03BB\u03BF\u03B3\u03AD\u03C2:
     (\u03BA\u03AC\u03BD\u03C4\u03B5 \u03BA\u03BB\u03B9\u03BA \u03C0\u03AC\u03BD\u03C9
     \u03C3\u03B5 \u03BC\u03AF\u03B1 \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03C4\u03B7\u03BD
-    \u03B5\u03C0\u03B9\u03BB\u03AD\u03BE\u03B5\u03C4\u03B5)"
+    \u03B5\u03C0\u03B9\u03BB\u03AD\u03BE\u03B5\u03B9\u03C2)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 959f9858c764752469ba5f175ec27345, type: 2}
   m_sharedMaterial: {fileID: -3255597144125338330, guid: 959f9858c764752469ba5f175ec27345, type: 2}
@@ -66260,7 +66486,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b2962672bd0fe6f4f98312886d23951d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -67876,7 +68102,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: aeffef1e8bce51447b46f70504171d0a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -72131,14 +72357,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u039D\u03BF\u03BC\u03AF\u03B6\u03C9 \u03C0\u03C9\u03C2 \u03B1\u03C0\u03CC
     \u03BA\u03B1\u03B8\u03B1\u03C1\u03AE \u03C4\u03CD\u03C7\u03B7 \u03C4\u03B7\u03BD
-    \u03B3\u03BB\u03C5\u03C4\u03CE\u03C3\u03B1\u03C4\u03B5 \u03C4\u03B9\u03C2 \u03B4\u03CD\u03BF
+    \u03B3\u03BB\u03CD\u03C4\u03C9\u03C3\u03B5\u03C2 \u03C4\u03B9\u03C2 \u03B4\u03CD\u03BF
     \u03C0\u03C1\u03CE\u03C4\u03B5\u03C2 \u03C6\u03BF\u03C1\u03AD\u03C2. \u03A4\u03CE\u03C1\u03B1
     \u03AE\u03C1\u03B8\u03B5 \u03B7 \u03CE\u03C1\u03B1 \u03BD\u03B1 \u03B5\u03C0\u03B9\u03C4\u03B5\u03B8\u03CE
     \u03C3\u03C4\u03BF\u03BD \u03C4\u03C1\u03B1\u03C0\u03B5\u03B6\u03B9\u03BA\u03CC
-    \u03C3\u03B1\u03C2 \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC.
-    \u039D\u03B1 \u03B4\u03C9 \u03C0\u03C9\u03C2 \u03B8\u03B1 \u03C4\u03B1 \u03C0\u03AC\u03C4\u03B5
-    \u03C4\u03CE\u03C1\u03B1. \u03A0\u03C1\u03BF\u03C3\u03C0\u03B1\u03B8\u03AE\u03C3\u03C4\u03B5
-    \u03BD\u03B1 \u03B1\u03BC\u03C5\u03BD\u03B8\u03B5\u03AF\u03C4\u03B5. \u0388\u03C7\u03B5\u03C4\u03B5
+    \u03C3\u03BF\u03C5 \u03BB\u03BF\u03B3\u03B1\u03C1\u03B9\u03B1\u03C3\u03BC\u03CC.
+    \u039D\u03B1 \u03B4\u03C9 \u03C0\u03C9\u03C2 \u03B8\u03B1 \u03C4\u03B1 \u03C0\u03AC\u03C2
+    \u03C4\u03CE\u03C1\u03B1. \u03A0\u03C1\u03BF\u03C3\u03C0\u03AC\u03B8\u03B7\u03C3\u03B5
+    \u03BD\u03B1 \u03B1\u03BC\u03C5\u03BD\u03B8\u03B5\u03AF\u03C2. \u0388\u03C7\u03B5\u03B9\u03C2
     \u03C4\u03B9\u03C2 \u03B5\u03BE\u03AE\u03C2 \u03B5\u03C0\u03B9\u03BB\u03BF\u03B3\u03AD\u03C2:
     (\u03BA\u03AC\u03BD\u03C4\u03B5 \u03BA\u03BB\u03B9\u03BA \u03C0\u03AC\u03BD\u03C9
     \u03C3\u03B5 \u03BC\u03AF\u03B1 \u03B3\u03B9\u03B1 \u03BD\u03B1 \u03C4\u03B7\u03BD
@@ -72338,6 +72564,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1807607179}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 2093602439}
   textLabel: {fileID: 1110067484}
   testDialogue: {fileID: 11400000, guid: ecec510f7f36ff748bf468f733e59d92, type: 2}
@@ -72550,6 +72778,14 @@ MonoBehaviour:
     - "\u039D\u03B1 \u03C4\u03BF\u03C5 \u03B6\u03B7\u03C4\u03AE\u03C3\u03B5\u03B9\u03C2
       \u03B5\u03C5\u03B3\u03B5\u03BD\u03B9\u03BA\u03AC \u03BD\u03B1 \u03BC\u03B7\u03BD
       \u03C4\u03BF\u03BD \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03AE\u03C3\u03B5\u03B9"
+    Feedback: "\u03A3\u03B5 \u03C0\u03B5\u03C1\u03AF\u03C0\u03C4\u03C9\u03C3\u03B7
+      \u03C0\u03BF\u03C5 \u03B1\u03BD\u03C4\u03B9\u03BB\u03B7\u03C6\u03B8\u03BF\u03CD\u03BC\u03B5
+      \u03CC\u03C4\u03B9 \u03AD\u03BD\u03B1\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2
+      \u03BC\u03B1\u03C2 \u03AD\u03C7\u03B5\u03B9 \u03C5\u03C0\u03BF\u03BA\u03BB\u03B1\u03C0\u03B5\u03AF
+      \u03C0\u03C1\u03AD\u03C0\u03B5\u03B9 \u03BD\u03B1 \u03C4\u03BF\u03BD \u03B1\u03BB\u03BB\u03AC\u03BE\u03BF\u03C5\u03BC\u03B5
+      \u03CC\u03C3\u03BF \u03C4\u03BF \u03B4\u03C5\u03BD\u03B1\u03C4\u03CC\u03BD
+      \u03C0\u03B9\u03BF \u03C3\u03CD\u03BD\u03C4\u03BF\u03BC\u03B1 \u03B3\u03B9\u03B1
+      \u03BD\u03B1 \u03B5\u03AF\u03BC\u03B1\u03C3\u03C4\u03B5 \u03B1\u03C3\u03C6\u03B1\u03BB\u03B5\u03AF\u03C2."
     CorrectAnswer: 2
   - Question: "\u0391\u03BD \u03B1\u03C0\u03BF\u03C6\u03B1\u03C3\u03AF\u03C3\u03B5\u03B9\u03C2
       \u03BD\u03B1 \u03BA\u03C1\u03B1\u03C4\u03AE\u03C3\u03B5\u03B9\u03C2 \u03C4\u03BF\u03C5\u03C2
@@ -72573,6 +72809,16 @@ MonoBehaviour:
     - "\u0394\u03B5\u03BD \u03C7\u03C1\u03B5\u03B9\u03AC\u03B6\u03B5\u03C4\u03B1\u03B9
       \u03BD\u03B1 \u03BA\u03AC\u03BD\u03B5\u03B9\u03C2 \u03BA\u03AC\u03C4\u03B9
       \u03AC\u03BB\u03BB\u03BF."
+    Feedback: "\u039A\u03B1\u03BB\u03CC \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BD\u03B1
+      \u03BC\u03B7\u03BD \u03BA\u03C1\u03B1\u03C4\u03AC\u03BC\u03B5 \u03C4\u03BF\u03C5\u03C2
+      \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2 \u03BC\u03B1\u03C2 \u03C3\u03B7\u03BC\u03B5\u03B9\u03C9\u03BC\u03AD\u03BD\u03BF\u03C5\u03C2
+      \u03C3\u03B5 \u03C4\u03B5\u03C4\u03C1\u03AC\u03B4\u03B9\u03B1. \u0391\u03BD
+      \u03C9\u03C3\u03C4\u03CC\u03C3\u03BF \u03B1\u03C0\u03BF\u03C6\u03B1\u03C3\u03AF\u03C3\u03B5\u03B9
+      \u03BA\u03B1\u03BD\u03B5\u03AF\u03C2 \u03BD\u03B1 \u03C4\u03BF \u03BA\u03AC\u03BD\u03B5\u03B9,
+      \u03BA\u03B1\u03BB\u03CC \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BD\u03B1 \u03BA\u03C1\u03B1\u03C4\u03AE\u03C3\u03B5\u03B9
+      \u03B1\u03C5\u03C4\u03CC \u03C4\u03BF \u03C4\u03B5\u03C4\u03C1\u03AC\u03B4\u03B9\u03BF
+      \u03C6\u03C5\u03BB\u03B1\u03B3\u03BC\u03AD\u03BD\u03BF \u03C3\u03B5 \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF
+      \u03B1\u03C3\u03C6\u03B1\u03BB\u03AD\u03C2 \u03C3\u03B7\u03BC\u03B5\u03AF\u03BF."
     CorrectAnswer: 3
   - Question: "\u03A4\u03B9 \u03B5\u03AF\u03BD\u03B1\u03B9 \u03BA\u03B1\u03BB\u03CD\u03C4\u03B5\u03C1\u03BF:
       \u03BD\u03B1 \u03B2\u03AC\u03BB\u03B5\u03B9\u03C2 \u03C3\u03B5 \u03CC\u03BB\u03B5\u03C2
@@ -72597,6 +72843,21 @@ MonoBehaviour:
     - "\u039A\u03B1\u03BC\u03AF\u03B1 \u03B1\u03C0\u03CC \u03C4\u03B9\u03C2 \u03B4\u03CD\u03BF
       \u03B5\u03C0\u03B9\u03BB\u03BF\u03B3\u03AD\u03C2 \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9
       \u03B2\u03AD\u03BB\u03C4\u03B9\u03C3\u03C4\u03B7"
+    Feedback: "\u039A\u03B1\u03BC\u03AF\u03B1 \u03B1\u03C0\u03CC \u03C4\u03B9\u03C2
+      \u03B4\u03CD\u03BF \u03B1\u03C5\u03C4\u03AD\u03C2 \u03B5\u03C0\u03B9\u03BB\u03BF\u03B3\u03AD\u03C2
+      \u03B4\u03B5\u03BD \u03B5\u03AF\u03BD\u03B1\u03B9 \u03C3\u03C9\u03C3\u03C4\u03AE.
+      \u0397 \u03BA\u03B1\u03BB\u03CD\u03C4\u03B5\u03C1\u03B7 \u03BB\u03CD\u03C3\u03B7
+      \u03B8\u03B1 \u03AE\u03C4\u03B1\u03BD \u03BD\u03B1 \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03B5\u03AF
+      \u03BA\u03B1\u03BD\u03B5\u03AF\u03C2 \u03BA\u03C9\u03B4\u03B9\u03BA\u03BF\u03CD\u03C2
+      \u03C0\u03BF\u03C5 \u03B4\u03B7\u03BC\u03B9\u03BF\u03CD\u03C1\u03B3\u03B7\u03C3\u03B5
+      \u03BC\u03AD\u03C3\u03C9 \u03B3\u03B5\u03BD\u03BD\u03AE\u03C4\u03C1\u03B9\u03B1\u03C2
+      \u03C4\u03C5\u03C7\u03B1\u03AF\u03C9\u03BD \u03BA\u03C9\u03B4\u03B9\u03BA\u03CE\u03BD
+      \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2 \u03BA\u03B1\u03B9 \u03BD\u03B1
+      \u03C4\u03BF\u03C5\u03C2 \u03BA\u03C1\u03B1\u03C4\u03AC\u03B5\u03B9 \u03B1\u03C0\u03BF\u03B8\u03B7\u03BA\u03B5\u03C5\u03BC\u03AD\u03BD\u03BF\u03C5\u03C2
+      \u03C7\u03C1\u03B7\u03C3\u03B9\u03BC\u03BF\u03C0\u03BF\u03B9\u03CE\u03BD\u03C4\u03B1\u03C2
+      \u03BA\u03AC\u03C0\u03BF\u03B9\u03BF \u03B1\u03BE\u03B9\u03CC\u03C0\u03B9\u03C3\u03C4\u03BF
+      \u03BB\u03BF\u03B3\u03B9\u03C3\u03BC\u03B9\u03BA\u03CC \u03B4\u03B9\u03B1\u03C7\u03B5\u03AF\u03C1\u03B9\u03C3\u03B7\u03C2
+      \u03BA\u03C9\u03B4\u03B9\u03BA\u03CE\u03BD \u03C0\u03C1\u03CC\u03C3\u03B2\u03B1\u03C3\u03B7\u03C2."
     CorrectAnswer: 4
   options:
   - {fileID: 574376014}
@@ -72674,7 +72935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 959f9858c764752469ba5f175ec27345, type: 2}
   m_sharedMaterial: {fileID: -3255597144125338330, guid: 959f9858c764752469ba5f175ec27345, type: 2}
@@ -73394,7 +73655,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 43ccbdef669dd844ea1bdd7aee1d6e8f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.283
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -74653,6 +74914,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button1: {fileID: 1807607179}
+  button2: {fileID: 0}
+  button3: {fileID: 0}
   dialogueBox: {fileID: 2093602439}
   textLabel: {fileID: 1110067484}
   testDialogue: {fileID: 11400000, guid: ecec510f7f36ff748bf468f733e59d92, type: 2}
@@ -76353,8 +76616,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2133724255}
   m_TextComponent: {fileID: 813698065}
   m_Placeholder: {fileID: 2032346274}
-  m_ContentType: 7
-  m_InputType: 2
+  m_ContentType: 0
+  m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
